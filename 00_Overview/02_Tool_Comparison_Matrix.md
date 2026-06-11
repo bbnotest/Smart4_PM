@@ -26,7 +26,7 @@
 
 ## 2. 무료 요금제 — 검증된 사실 (공식 문서 기준)
 
-수업 설계와 직결되는 부분이라 **공식 출처로 확인**했습니다(2026-06 기준).
+툴 선택과 직결되는 부분이라 **공식 출처로 확인**했습니다(2026-06 기준).
 
 | 툴 | 무료 플랜 핵심 한도 | 출처 |
 |---|---|---|
@@ -35,7 +35,7 @@
 | **Asana** | **최대 10명**(Personal), **List·Board·Calendar 무료**. **Timeline/Gantt는 Starter 이상(유료)** | [Asana 요금제](https://asana.com/pricing) · [프로젝트 뷰](https://asana.com/features/project-management/project-views) |
 | **Redmine** | 오픈소스(GPL), **자체 호스팅 시 모든 한도 무제한**. 최신 안정판 **6.1.2**(2026-03), Docker 공식 이미지 제공 | [Redmine 다운로드](https://www.redmine.org/projects/redmine/wiki/download) · [Docker 이미지](https://hub.docker.com/_/redmine) |
 
-> ⚠️ 요금제·한도는 변경될 수 있습니다. 수업 직전 **공식 가격 페이지에서 재확인**하세요. 위 표의 출처 링크가 항상 최신입니다.
+> ⚠️ 요금제·한도는 변경될 수 있습니다. 사용 전 **공식 가격 페이지에서 재확인**하세요. 위 표의 출처 링크가 항상 최신입니다.
 
 ---
 
@@ -46,7 +46,7 @@
 - **보완 필요**: Redmine — 코어에 보드 없음 → ① 상태 워크플로 + 저장된 필터로 의사 칸반, ② 심화 시 **Redmine Agile 플러그인**(무료 커뮤니티판/유료판 존재, 설치는 선택)
 
 ### Gantt / Timeline
-- **무료로 지원**: **Jira(Timeline)**, **Redmine(내장 Gantt)** ← 본 과정의 Gantt 핵심 실습
+- **무료로 지원**: **Jira(Timeline)**, **Redmine(내장 Gantt)** ← 이 가이드의 Gantt 핵심
 - **유료**: Asana(Timeline=Starter+), Trello(Timeline=Premium)
   - 보완책: Asana는 **Calendar 뷰**로 일정 감각 + 14일 체험판으로 Timeline 1회 체험, Trello는 **Calendar Power-Up** 또는 Butler로 마감일 관리
 
@@ -101,4 +101,4 @@ graph TD
 - Trello: [플랜 안내](https://support.atlassian.com/trello/docs/which-trello-plan-is-best-for-me/), [협업자 한도](https://support.atlassian.com/trello/docs/workspace-user-limit/)
 - Redmine: [다운로드/버전](https://www.redmine.org/projects/redmine/wiki/download), [Docker 이미지](https://hub.docker.com/_/redmine), [사용자 가이드](https://www.redmine.org/projects/redmine/wiki/Guide)
 
-*다음 문서 → [`03_Game_Project_Scenario.md`](03_Game_Project_Scenario.md): 모든 실습에 공통으로 쓸 게임 프로젝트 시나리오.*
+*다음 문서 → [`03_Game_Project_Scenario.md`](03_Game_Project_Scenario.md): 모든 가이드에 공통으로 쓰는 게임 예제.*

@@ -59,10 +59,10 @@
     $$(".nav-item").forEach(a => a.classList.toggle("done", isDone(a.dataset.path)));
     const hero = $("#heroFill"), heroT = $("#heroPctTxt");
     if (hero) hero.style.width = pct + "%";
-    if (heroT) heroT.textContent = pct + "% 완료 (" + FLAT.filter(i => isDone(i.path)).length + "/" + FLAT.length + " 강의)";
+    if (heroT) heroT.textContent = pct + "% 완료 (" + FLAT.filter(i => isDone(i.path)).length + "/" + FLAT.length + " 문서)";
     $$(".day-card .mini span").forEach(sp => {
-      const day = +sp.closest(".day-card").dataset.day;
-      const items = FLAT.filter(i => i.day === day);
+      const m = sp.closest(".day-card").dataset.match;
+      const items = FLAT.filter(i => i.path.indexOf(m) === 0);
       const d = items.filter(i => isDone(i.path)).length;
       sp.style.width = (items.length ? (d / items.length) * 100 : 0) + "%";
     });
@@ -89,7 +89,7 @@
         a.href = "#/" + it.path;
         a.dataset.path = it.path;
         a.dataset.title = it.title;
-        const typeLabel = it.type === "practice" ? '<span class="type practice">실습</span>'
+        const typeLabel = it.type === "practice" ? '<span class="type practice">연습</span>'
                          : it.type === "guide" ? '<span class="type">가이드</span>' : "";
         a.innerHTML = '<span class="tick">✓</span><span class="nm">' + escapeHtml(it.title) + "</span>" + typeLabel;
         a.addEventListener("click", () => closeSidebar());
@@ -266,11 +266,10 @@
   /* ---------------- 대시보드 ---------------- */
   function renderDashboard() {
     setActive("__home__");
-    const dayCards = C.days.map(d =>
-      '<a class="day-card" data-day="' + d.day + '" href="#/' + d.go + '">' +
-        '<span class="d">DAY ' + d.day + "</span>" +
-        '<span class="t">' + escapeHtml(d.title) + "</span>" +
-        '<span class="s">' + escapeHtml(d.subtitle) + "</span>" +
+    const dayCards = C.cards.map(d =>
+      '<a class="day-card" data-match="' + d.match + '" href="#/' + d.go + '">' +
+        '<span class="t">' + escapeHtml(d.label) + "</span>" +
+        '<span class="s">' + escapeHtml(d.sub) + "</span>" +
         '<span class="mini"><span></span></span>' +
       "</a>").join("");
 
@@ -285,17 +284,17 @@
       '<div class="dash">' +
         '<div class="hero">' +
           "<h1>🎮 " + escapeHtml(C.title) + "</h1>" +
-          "<p>" + escapeHtml(C.subtitle) + " · 4개 협업툴을 1주 만에 실습으로 익히는 과정</p>" +
+          "<p>" + escapeHtml(C.subtitle) + " · 4개 협업툴을 혼자 따라 하며 익히는 가이드</p>" +
           '<div class="hero-prog"><div class="bar"><span id="heroFill"></span></div><small id="heroPctTxt"></small></div>' +
         "</div>" +
-        '<div class="section-h">🗓️ 5일 한눈에 (클릭하여 시작)</div>' +
+        '<div class="section-h">🧭 가이드 한눈에 (클릭하여 시작)</div>' +
         '<div class="day-grid">' + dayCards + "</div>" +
-        '<div class="section-h">📦 산출물 (Deliverables)</div>' +
+        '<div class="section-h">✋ 직접 만들어보기</div>' +
         '<div class="deliverables">' + delItems + "</div>" +
         '<div class="section-h">📚 먼저 읽기</div>' +
         '<div class="deliverables">' +
-          '<a href="#/README.md"><span class="dot" style="background:var(--brand)"></span>과정 소개 (README)</a>' +
-          '<a href="#/00_Overview/00_Curriculum_Overview.md"><span class="dot" style="background:var(--brand)"></span>과정 개요 · 5일 일정</a>' +
+          '<a href="#/README.md"><span class="dot" style="background:var(--brand)"></span>가이드 소개 (README)</a>' +
+          '<a href="#/00_Overview/00_Curriculum_Overview.md"><span class="dot" style="background:var(--brand)"></span>이 가이드 사용법</a>' +
         "</div>" +
       "</div>";
     refreshProgressUI();

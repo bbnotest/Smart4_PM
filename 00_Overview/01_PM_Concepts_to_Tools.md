@@ -110,7 +110,7 @@ gantt
 | **Asana** | **Timeline / Gantt 뷰** | ❌ Starter 이상(유료) |
 | **Trello** | **Timeline 뷰**(Premium) 또는 Power-Up | ❌ 유료/플러그인 |
 
-> 그래서 본 과정의 **Gantt 핵심 실습은 Redmine + Jira**에서, Asana/Trello는 무료 범위(List/Calendar/Board)로 배우고 Gantt는 개념·체험판으로 보완합니다.
+> 그래서 이 가이드에서 **Gantt는 Redmine·Jira**로 익히고, Asana/Trello는 무료 범위(List/Calendar/Board)로 익히며 Gantt는 개념·체험판으로 보완합니다.
 
 ---
 

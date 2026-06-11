@@ -43,7 +43,7 @@ Workspace(작업공간)
 > 캡션: "리스트(세로 줄)와 카드(포스트잇)로 구성된 실제 Trello 보드"
 > 공식 출처: https://trello.com/guide/trello-101 ← 이 페이지의 보드 화면을 캡처해 넣으세요
 
-> 💡 **이 가이드는 무슨 프로젝트로 연습하나요?** 모든 툴 실습은 같은 가상 게임 프로젝트 **[Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)** 을 씁니다. 먼저 안 읽어도 따라올 수 있게, 필요한 부분은 이 문서에 다시 적어두었습니다.
+> 💡 **이 가이드는 무슨 프로젝트로 연습하나요?** 모든 툴 가이드는 같은 가상 게임 프로젝트 **[Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)** 을 씁니다. 먼저 안 읽어도 따라올 수 있게, 필요한 부분은 이 문서에 다시 적어두었습니다.
 
 ---
 
@@ -155,7 +155,7 @@ graph LR
 1. **`Dates`** 클릭 → Due date에 `2026-07-17` 지정 → Save.
 
 ### ④ 담당자(Members)
-1. **`Members`** 클릭 → 팀원을 선택합니다. 혼자면 본인을 넣으세요. (실습이니 `DEV` 역할이라 생각하고 본인 지정)
+1. **`Members`** 클릭 → 팀원을 선택합니다. 혼자면 본인을 넣으세요. (연습이니 `DEV` 역할이라 생각하고 본인 지정)
 
 > 🖼️ 공식 스크린샷 자리 — Trello: 카드 상세(라벨·체크리스트·마감)
 > 공식 출처: https://support.atlassian.com/trello/docs/adding-checklists-to-cards/
