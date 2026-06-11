@@ -1,0 +1,46 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Malgun Gothic', Arial, sans-serif">
+  <text x="16" y="24" font-size="15" font-weight="700" fill="#172B4D">Jira 작업 계층 — 큰 것에서 작은 것으로</text>
+
+  <!-- connectors -->
+  <g stroke="#B3BAC5" stroke-width="2" fill="none">
+    <path d="M320 96 L135 140"/>
+    <path d="M320 96 L320 140"/>
+    <path d="M320 96 L505 140"/>
+    <path d="M135 184 L95 224"/>
+    <path d="M135 184 L195 224"/>
+  </g>
+
+  <!-- Epic -->
+  <rect x="240" y="52" width="160" height="44" rx="8" fill="#EAE6FF" stroke="#998DD9"/>
+  <text x="320" y="74" font-size="12" font-weight="700" fill="#403294" text-anchor="middle">🟪 Epic (에픽)</text>
+  <text x="320" y="89" font-size="10" fill="#5E4DB2" text-anchor="middle">E2 코어 플레이</text>
+
+  <!-- Stories -->
+  <rect x="60" y="140" width="150" height="44" rx="8" fill="#E3FCEF" stroke="#57D9A3"/>
+  <text x="135" y="162" font-size="12" font-weight="700" fill="#006644" text-anchor="middle">🟩 Story</text>
+  <text x="135" y="177" font-size="10" fill="#006644" text-anchor="middle">US-01 자동 전진</text>
+
+  <rect x="245" y="140" width="150" height="44" rx="8" fill="#E3FCEF" stroke="#57D9A3"/>
+  <text x="320" y="162" font-size="12" font-weight="700" fill="#006644" text-anchor="middle">🟩 Story</text>
+  <text x="320" y="177" font-size="10" fill="#006644" text-anchor="middle">US-02 점프</text>
+
+  <rect x="430" y="140" width="150" height="44" rx="8" fill="#E3FCEF" stroke="#57D9A3"/>
+  <text x="505" y="162" font-size="12" font-weight="700" fill="#006644" text-anchor="middle">🟩 Story</text>
+  <text x="505" y="177" font-size="10" fill="#006644" text-anchor="middle">US-04 충돌</text>
+
+  <!-- Sub-tasks -->
+  <rect x="30" y="224" width="130" height="40" rx="8" fill="#F4F5F7" stroke="#C1C7D0"/>
+  <text x="95" y="244" font-size="11" font-weight="700" fill="#42526E" text-anchor="middle">⬜ Sub-task</text>
+  <text x="95" y="258" font-size="9" fill="#5E6C84" text-anchor="middle">입력 처리</text>
+
+  <rect x="170" y="224" width="130" height="40" rx="8" fill="#F4F5F7" stroke="#C1C7D0"/>
+  <text x="235" y="244" font-size="11" font-weight="700" fill="#42526E" text-anchor="middle">⬜ Sub-task</text>
+  <text x="235" y="258" font-size="9" fill="#5E6C84" text-anchor="middle">물리 적용</text>
+
+  <!-- side labels -->
+  <text x="612" y="78" font-size="10" fill="#998DD9" text-anchor="end">큰 목표</text>
+  <text x="612" y="166" font-size="10" fill="#36B37E" text-anchor="end">실제 작업</text>
+  <text x="612" y="248" font-size="10" fill="#7A869A" text-anchor="end">더 잘게</text>
+
+  <text x="16" y="290" font-size="10" fill="#7A869A">에픽(E1~E7) 안에 스토리(US-01~09)들이 있고, 스토리는 서브태스크로 쪼갤 수 있습니다 = WBS</text>
+</svg>

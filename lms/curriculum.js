@@ -37,8 +37,14 @@ window.CURRICULUM = {
       title: "Jira",
       badge: "Scrum",
       items: [
-        { path: "02_Jira/Guide.md",    title: "Jira 가이드",       type: "guide" },
-        { path: "02_Jira/Practice.md", title: "Jira 직접 해보기",  type: "practice", deliverable: "백로그 + 스프린트 + Timeline" }
+        { path: "02_Jira/Guide.md",    title: "Jira 개요",             type: "guide" },
+        { path: "02_Jira/Step1.md",    title: "1단계 · 계정과 프로젝트", type: "step" },
+        { path: "02_Jira/Step2.md",    title: "2단계 · 작업 계층",      type: "step" },
+        { path: "02_Jira/Step3.md",    title: "3단계 · 백로그",         type: "step" },
+        { path: "02_Jira/Step4.md",    title: "4단계 · 스프린트",       type: "step" },
+        { path: "02_Jira/Step5.md",    title: "5단계 · Timeline",      type: "step" },
+        { path: "02_Jira/Step6.md",    title: "6단계 · 리포트 & 마무리", type: "step" },
+        { path: "02_Jira/Practice.md", title: "Jira 직접 해보기",     type: "practice", deliverable: "백로그 + 스프린트 + Timeline" }
       ]
     },
     {
@@ -46,8 +52,13 @@ window.CURRICULUM = {
       title: "Asana",
       badge: "Views",
       items: [
-        { path: "03_Asana/Guide.md",    title: "Asana 가이드",       type: "guide" },
-        { path: "03_Asana/Practice.md", title: "Asana 직접 해보기",  type: "practice", deliverable: "다중 뷰 프로젝트" }
+        { path: "03_Asana/Guide.md",    title: "Asana 개요",            type: "guide" },
+        { path: "03_Asana/Step1.md",    title: "1단계 · 계정과 프로젝트", type: "step" },
+        { path: "03_Asana/Step2.md",    title: "2단계 · 섹션과 태스크",  type: "step" },
+        { path: "03_Asana/Step3.md",    title: "3단계 · 태스크 꾸미기",  type: "step" },
+        { path: "03_Asana/Step4.md",    title: "4단계 · 뷰 전환",        type: "step" },
+        { path: "03_Asana/Step5.md",    title: "5단계 · 마일스톤 & 마무리", type: "step" },
+        { path: "03_Asana/Practice.md", title: "Asana 직접 해보기",    type: "practice", deliverable: "다중 뷰 프로젝트" }
       ]
     },
     {
@@ -55,8 +66,14 @@ window.CURRICULUM = {
       title: "Redmine",
       badge: "Gantt",
       items: [
-        { path: "04_Redmine/Guide.md",    title: "Redmine 가이드",       type: "guide" },
-        { path: "04_Redmine/Practice.md", title: "Redmine 직접 해보기",  type: "practice", deliverable: "프로젝트 + 내장 Gantt" }
+        { path: "04_Redmine/Guide.md",    title: "Redmine 개요",            type: "guide" },
+        { path: "04_Redmine/Step1.md",    title: "1단계 · Redmine 띄우기",   type: "step" },
+        { path: "04_Redmine/Step2.md",    title: "2단계 · 관리자 & 프로젝트", type: "step" },
+        { path: "04_Redmine/Step3.md",    title: "3단계 · 이슈와 WBS",      type: "step" },
+        { path: "04_Redmine/Step4.md",    title: "4단계 · 버전(마일스톤)",   type: "step" },
+        { path: "04_Redmine/Step5.md",    title: "5단계 · 내장 간트",        type: "step" },
+        { path: "04_Redmine/Step6.md",    title: "6단계 · 시간기록 & 마무리", type: "step" },
+        { path: "04_Redmine/Practice.md", title: "Redmine 직접 해보기",   type: "practice", deliverable: "프로젝트 + 내장 Gantt" }
       ]
     },
     {
