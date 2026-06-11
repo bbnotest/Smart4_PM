@@ -1,0 +1,22 @@
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 에디터 ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Node (LMS 라이브러리를 로컬 설치할 경우) ----
+node_modules/
+package-lock.json
+
+# ---- Redmine 실습(Docker compose)을 이 폴더에서 실행 시 생성되는 데이터 ----
+redmine-db/
+redmine-files/
+
+# ---- 임시/로그 ----
+*.log
+.tmp/

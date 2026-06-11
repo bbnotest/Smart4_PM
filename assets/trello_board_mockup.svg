@@ -1,0 +1,94 @@
+<svg viewBox="0 0 960 380" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Malgun Gothic', Arial, sans-serif">
+  <!-- title -->
+  <text x="16" y="24" font-size="15" font-weight="700" fill="#172B4D">Trello 보드 목업 — Pixel Dungeon Run · Sprint 1</text>
+  <!-- board background -->
+  <rect x="0" y="36" width="960" height="344" fill="#2E7CD6"/>
+  <!-- board header -->
+  <rect x="0" y="36" width="960" height="30" fill="#1B63B5"/>
+  <text x="16" y="56" font-size="13" font-weight="700" fill="#FFFFFF">▦ Sprint 1 Board</text>
+  <text x="180" y="56" font-size="11" fill="#D6E4F5">Workspace: GameDev Academy</text>
+  <circle cx="860" cy="51" r="9" fill="#4C9AFF"/><text x="860" y="55" font-size="9" fill="#fff" text-anchor="middle">PM</text>
+  <circle cx="882" cy="51" r="9" fill="#57D9A3"/><text x="882" y="55" font-size="9" fill="#fff" text-anchor="middle">DEV</text>
+  <circle cx="904" cy="51" r="9" fill="#998DD9"/><text x="904" y="55" font-size="9" fill="#fff" text-anchor="middle">ART</text>
+
+  <!-- ===== List: Backlog ===== -->
+  <rect x="16" y="78" width="174" height="216" rx="8" fill="#EBECF0"/>
+  <text x="28" y="98" font-size="12" font-weight="700" fill="#172B4D">📥 Backlog</text>
+  <text x="174" y="98" font-size="10" fill="#5E6C84" text-anchor="end">3</text>
+  <!-- card US-05 -->
+  <rect x="24" y="108" width="158" height="52" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="32" y="116" width="34" height="8" rx="4" fill="#57D9A3"/>
+  <text x="32" y="140" font-size="11" fill="#172B4D">US-05 절차적 생성</text>
+  <rect x="32" y="146" width="32" height="12" rx="2" fill="#E3FCEF"/><text x="48" y="155" font-size="8" fill="#006644" text-anchor="middle">☑ 1/3</text>
+  <rect x="150" y="144" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="162" y="153" font-size="8" fill="#42526E" text-anchor="middle">5pt</text>
+  <!-- card US-06 -->
+  <rect x="24" y="168" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="32" y="176" width="34" height="8" rx="4" fill="#57D9A3"/>
+  <text x="32" y="200" font-size="11" fill="#172B4D">US-06 점수 집계</text>
+  <rect x="150" y="194" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="162" y="203" font-size="8" fill="#42526E" text-anchor="middle">2pt</text>
+  <!-- card US-08 -->
+  <rect x="24" y="220" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="32" y="228" width="34" height="8" rx="4" fill="#FFAB00"/>
+  <text x="32" y="252" font-size="11" fill="#172B4D">US-08 효과음</text>
+  <rect x="150" y="246" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="162" y="255" font-size="8" fill="#42526E" text-anchor="middle">2pt</text>
+  <text x="28" y="284" font-size="11" fill="#5E6C84">+ 카드 추가</text>
+
+  <!-- ===== List: To Do ===== -->
+  <rect x="206" y="78" width="174" height="216" rx="8" fill="#EBECF0"/>
+  <text x="218" y="98" font-size="12" font-weight="700" fill="#172B4D">📋 To Do</text>
+  <text x="364" y="98" font-size="10" fill="#5E6C84" text-anchor="end">3</text>
+  <rect x="214" y="108" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="222" y="116" width="34" height="8" rx="4" fill="#4C9AFF"/>
+  <text x="222" y="140" font-size="11" fill="#172B4D">US-01 자동 전진</text>
+  <rect x="340" y="134" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="352" y="143" font-size="8" fill="#42526E" text-anchor="middle">3pt</text>
+  <rect x="214" y="160" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="222" y="168" width="34" height="8" rx="4" fill="#4C9AFF"/>
+  <text x="222" y="192" font-size="11" fill="#172B4D">US-02 점프(탭)</text>
+  <rect x="340" y="186" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="352" y="195" font-size="8" fill="#42526E" text-anchor="middle">2pt</text>
+  <rect x="214" y="212" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="222" y="220" width="34" height="8" rx="4" fill="#4C9AFF"/>
+  <text x="222" y="244" font-size="11" fill="#172B4D">US-03 슬라이드</text>
+  <rect x="340" y="238" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="352" y="247" font-size="8" fill="#42526E" text-anchor="middle">2pt</text>
+  <text x="218" y="284" font-size="11" fill="#5E6C84">+ 카드 추가</text>
+
+  <!-- ===== List: In Progress ===== -->
+  <rect x="396" y="78" width="174" height="120" rx="8" fill="#EBECF0"/>
+  <text x="408" y="98" font-size="12" font-weight="700" fill="#172B4D">🔨 In Progress</text>
+  <text x="554" y="98" font-size="10" fill="#5E6C84" text-anchor="end">1</text>
+  <rect x="404" y="108" width="158" height="52" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="412" y="116" width="34" height="8" rx="4" fill="#4C9AFF"/>
+  <text x="412" y="140" font-size="11" fill="#172B4D">US-04 충돌/게임오버</text>
+  <circle cx="420" cy="151" r="7" fill="#57D9A3"/><text x="420" y="154" font-size="7" fill="#fff" text-anchor="middle">DEV</text>
+  <rect x="532" y="144" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="544" y="153" font-size="8" fill="#42526E" text-anchor="middle">3pt</text>
+  <text x="408" y="186" font-size="11" fill="#5E6C84">+ 카드 추가</text>
+
+  <!-- ===== List: Review ===== -->
+  <rect x="586" y="78" width="174" height="120" rx="8" fill="#EBECF0"/>
+  <text x="598" y="98" font-size="12" font-weight="700" fill="#172B4D">🔍 Review</text>
+  <text x="744" y="98" font-size="10" fill="#5E6C84" text-anchor="end">1</text>
+  <rect x="594" y="108" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="602" y="116" width="34" height="8" rx="4" fill="#998DD9"/>
+  <text x="602" y="140" font-size="11" fill="#172B4D">US-07 결과화면</text>
+  <rect x="720" y="134" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="732" y="143" font-size="8" fill="#42526E" text-anchor="middle">3pt</text>
+  <text x="598" y="186" font-size="11" fill="#5E6C84">+ 카드 추가</text>
+
+  <!-- ===== List: Done ===== -->
+  <rect x="776" y="78" width="174" height="120" rx="8" fill="#EBECF0"/>
+  <text x="788" y="98" font-size="12" font-weight="700" fill="#172B4D">✅ Done</text>
+  <text x="934" y="98" font-size="10" fill="#5E6C84" text-anchor="end">1</text>
+  <rect x="784" y="108" width="158" height="44" rx="4" fill="#fff" stroke="#091E4214"/>
+  <rect x="792" y="116" width="34" height="8" rx="4" fill="#FF7452"/>
+  <text x="792" y="140" font-size="11" fill="#172B4D">US-09 프로토 빌드</text>
+  <rect x="910" y="134" width="24" height="13" rx="6" fill="#DFE1E6"/><text x="922" y="143" font-size="8" fill="#42526E" text-anchor="middle">3pt</text>
+  <text x="788" y="186" font-size="11" fill="#5E6C84">+ 카드 추가</text>
+
+  <!-- legend -->
+  <rect x="396" y="214" width="554" height="80" rx="8" fill="#FFFFFF" opacity="0.92"/>
+  <text x="410" y="234" font-size="11" font-weight="700" fill="#172B4D">라벨(Label) = 에픽 분류</text>
+  <rect x="410" y="246" width="14" height="10" rx="2" fill="#4C9AFF"/><text x="430" y="255" font-size="10" fill="#42526E">E2 코어 플레이</text>
+  <rect x="410" y="264" width="14" height="10" rx="2" fill="#57D9A3"/><text x="430" y="273" font-size="10" fill="#42526E">E3 던전·콘텐츠</text>
+  <rect x="560" y="246" width="14" height="10" rx="2" fill="#998DD9"/><text x="580" y="255" font-size="10" fill="#42526E">E5 UI/UX</text>
+  <rect x="560" y="264" width="14" height="10" rx="2" fill="#FFAB00"/><text x="580" y="273" font-size="10" fill="#42526E">E6 오디오</text>
+  <rect x="710" y="246" width="14" height="10" rx="2" fill="#FF7452"/><text x="730" y="255" font-size="10" fill="#42526E">E7 QA·출시</text>
+  <text x="710" y="273" font-size="9" fill="#7A869A">리스트=워크플로 / 카드=작업</text>
+</svg>

@@ -1,0 +1,123 @@
+<svg viewBox="0 0 960 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Malgun Gothic', Arial, sans-serif">
+  <text x="14" y="22" font-size="15" font-weight="700" fill="#172B4D">Jira 백로그 목업 — Pixel Dungeon Run (에픽·스토리·스프린트)</text>
+  <!-- app frame -->
+  <rect x="0" y="34" width="960" height="386" rx="6" fill="#F4F5F7" stroke="#DFE1E6"/>
+  <!-- top bar -->
+  <rect x="0" y="34" width="960" height="30" rx="6" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <text x="14" y="54" font-size="12" font-weight="700" fill="#172B4D">▢ Pixel Dungeon Run</text>
+  <text x="180" y="54" font-size="12" fill="#0052CC" font-weight="700">Backlog</text>
+  <rect x="174" y="60" width="56" height="2" fill="#0052CC"/>
+  <text x="250" y="54" font-size="12" fill="#5E6C84">Board</text>
+  <text x="310" y="54" font-size="12" fill="#5E6C84">Timeline</text>
+
+  <!-- Epic panel -->
+  <rect x="10" y="74" width="150" height="338" rx="6" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <text x="22" y="92" font-size="10" font-weight="700" fill="#5E6C84">EPIC 패널</text>
+  <g font-size="10" fill="#172B4D">
+    <rect x="18" y="100" width="134" height="22" rx="3" fill="#F4F5F7"/><rect x="18" y="100" width="4" height="22" fill="#8993A4"/><text x="30" y="115">E1 기획</text>
+    <rect x="18" y="126" width="134" height="22" rx="3" fill="#EAF0FF"/><rect x="18" y="126" width="4" height="22" fill="#4C9AFF"/><text x="30" y="141">E2 코어 플레이</text>
+    <rect x="18" y="152" width="134" height="22" rx="3" fill="#E3FCEF"/><rect x="18" y="152" width="4" height="22" fill="#57D9A3"/><text x="30" y="167">E3 던전·콘텐츠</text>
+    <rect x="18" y="178" width="134" height="22" rx="3" fill="#EAE6FF"/><rect x="18" y="178" width="4" height="22" fill="#998DD9"/><text x="30" y="193">E5 UI/UX</text>
+    <rect x="18" y="204" width="134" height="22" rx="3" fill="#FFF7E6"/><rect x="18" y="204" width="4" height="22" fill="#FFAB00"/><text x="30" y="219">E6 오디오</text>
+    <rect x="18" y="230" width="134" height="22" rx="3" fill="#FFEBE6"/><rect x="18" y="230" width="4" height="22" fill="#FF7452"/><text x="30" y="245">E7 QA·출시</text>
+  </g>
+  <text x="22" y="276" font-size="9" fill="#7A869A">에픽 클릭 →</text>
+  <text x="22" y="290" font-size="9" fill="#7A869A">해당 스토리만</text>
+  <text x="22" y="304" font-size="9" fill="#7A869A">필터링</text>
+
+  <!-- Sprint 1 header -->
+  <rect x="170" y="74" width="780" height="26" rx="4" fill="#DEEBFF"/>
+  <text x="182" y="91" font-size="11" font-weight="700" fill="#172B4D">▾ Sprint 1</text>
+  <text x="260" y="91" font-size="10" fill="#5E6C84">2026-07-06 – 07-17 · 5 issues · 15 pts</text>
+  <rect x="852" y="79" width="88" height="17" rx="4" fill="#0052CC"/><text x="896" y="91" font-size="10" fill="#FFFFFF" text-anchor="middle">Start sprint</text>
+
+  <!-- helper: issue rows -->
+  <!-- row 1 -->
+  <g font-size="11">
+    <rect x="170" y="102" width="780" height="26" fill="#FFFFFF"/>
+    <rect x="180" y="108" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="118" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="118" font-size="9" fill="#5E6C84">PDR-1</text>
+    <text x="246" y="118" fill="#172B4D">US-01 플레이어 자동 전진</text>
+    <rect x="700" y="106" width="74" height="16" rx="8" fill="#EAF0FF"/><text x="737" y="117" font-size="9" fill="#2C5CC5" text-anchor="middle">E2 코어</text>
+    <circle cx="812" cy="115" r="9" fill="#DFE1E6"/><text x="812" y="118" font-size="9" fill="#42526E" text-anchor="middle">3</text>
+    <circle cx="900" cy="115" r="9" fill="#57D9A3"/><text x="900" y="118" font-size="8" fill="#fff" text-anchor="middle">DEV</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="128" width="780" height="26" fill="#FAFBFC"/>
+    <rect x="180" y="134" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="144" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="144" font-size="9" fill="#5E6C84">PDR-2</text>
+    <text x="246" y="144" fill="#172B4D">US-02 점프(탭) 입력</text>
+    <rect x="700" y="132" width="74" height="16" rx="8" fill="#EAF0FF"/><text x="737" y="143" font-size="9" fill="#2C5CC5" text-anchor="middle">E2 코어</text>
+    <circle cx="812" cy="141" r="9" fill="#DFE1E6"/><text x="812" y="144" font-size="9" fill="#42526E" text-anchor="middle">2</text>
+    <circle cx="900" cy="141" r="9" fill="#57D9A3"/><text x="900" y="144" font-size="8" fill="#fff" text-anchor="middle">DEV</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="154" width="780" height="26" fill="#FFFFFF"/>
+    <rect x="180" y="160" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="170" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="170" font-size="9" fill="#5E6C84">PDR-4</text>
+    <text x="246" y="170" fill="#172B4D">US-04 충돌/게임오버 판정</text>
+    <rect x="700" y="158" width="74" height="16" rx="8" fill="#EAF0FF"/><text x="737" y="169" font-size="9" fill="#2C5CC5" text-anchor="middle">E2 코어</text>
+    <circle cx="812" cy="167" r="9" fill="#DFE1E6"/><text x="812" y="170" font-size="9" fill="#42526E" text-anchor="middle">3</text>
+    <circle cx="900" cy="167" r="9" fill="#57D9A3"/><text x="900" y="170" font-size="8" fill="#fff" text-anchor="middle">DEV</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="180" width="780" height="26" fill="#FAFBFC"/>
+    <rect x="180" y="186" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="196" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="196" font-size="9" fill="#5E6C84">PDR-5</text>
+    <text x="246" y="196" fill="#172B4D">US-05 절차적 바닥/플랫폼 생성</text>
+    <rect x="700" y="184" width="74" height="16" rx="8" fill="#E3FCEF"/><text x="737" y="195" font-size="9" fill="#006644" text-anchor="middle">E3 던전</text>
+    <circle cx="812" cy="193" r="9" fill="#DFE1E6"/><text x="812" y="196" font-size="9" fill="#42526E" text-anchor="middle">5</text>
+    <circle cx="900" cy="193" r="9" fill="#57D9A3"/><text x="900" y="196" font-size="8" fill="#fff" text-anchor="middle">DEV</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="206" width="780" height="26" fill="#FFFFFF"/>
+    <rect x="180" y="212" width="13" height="13" rx="2" fill="#2684FF"/><text x="186" y="222" font-size="9" fill="#fff" text-anchor="middle">T</text>
+    <text x="200" y="222" font-size="9" fill="#5E6C84">PDR-9</text>
+    <text x="246" y="222" fill="#172B4D">US-09 1분 플레이 프로토타입 빌드</text>
+    <rect x="700" y="210" width="74" height="16" rx="8" fill="#FFEBE6"/><text x="737" y="221" font-size="9" fill="#BF2600" text-anchor="middle">E7 출시</text>
+    <circle cx="812" cy="219" r="9" fill="#DFE1E6"/><text x="812" y="222" font-size="9" fill="#42526E" text-anchor="middle">3</text>
+    <circle cx="900" cy="219" r="9" fill="#57D9A3"/><text x="900" y="222" font-size="8" fill="#fff" text-anchor="middle">DEV</text>
+  </g>
+
+  <!-- Backlog header -->
+  <rect x="170" y="238" width="780" height="24" rx="4" fill="#EBECF0"/>
+  <text x="182" y="254" font-size="11" font-weight="700" fill="#172B4D">▾ Backlog</text>
+  <text x="260" y="254" font-size="10" fill="#5E6C84">4 issues · 9 pts</text>
+  <rect x="852" y="242" width="88" height="16" rx="4" fill="#FFFFFF" stroke="#C1C7D0"/><text x="896" y="254" font-size="10" fill="#42526E" text-anchor="middle">+ Create</text>
+
+  <g font-size="11">
+    <rect x="170" y="264" width="780" height="24" fill="#FFFFFF"/>
+    <rect x="180" y="269" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="279" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="279" font-size="9" fill="#5E6C84">PDR-3</text>
+    <text x="246" y="279" fill="#172B4D">US-03 슬라이드(길게누르기)</text>
+    <rect x="700" y="267" width="74" height="16" rx="8" fill="#EAF0FF"/><text x="737" y="278" font-size="9" fill="#2C5CC5" text-anchor="middle">E2 코어</text>
+    <circle cx="812" cy="276" r="9" fill="#DFE1E6"/><text x="812" y="279" font-size="9" fill="#42526E" text-anchor="middle">2</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="288" width="780" height="24" fill="#FAFBFC"/>
+    <rect x="180" y="293" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="303" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="303" font-size="9" fill="#5E6C84">PDR-6</text>
+    <text x="246" y="303" fill="#172B4D">US-06 점수 집계(거리·코인)</text>
+    <rect x="700" y="291" width="74" height="16" rx="8" fill="#E3FCEF"/><text x="737" y="302" font-size="9" fill="#006644" text-anchor="middle">E3 던전</text>
+    <circle cx="812" cy="300" r="9" fill="#DFE1E6"/><text x="812" y="303" font-size="9" fill="#42526E" text-anchor="middle">2</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="312" width="780" height="24" fill="#FFFFFF"/>
+    <rect x="180" y="317" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="327" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="327" font-size="9" fill="#5E6C84">PDR-7</text>
+    <text x="246" y="327" fill="#172B4D">US-07 게임오버 결과 화면</text>
+    <rect x="700" y="315" width="74" height="16" rx="8" fill="#EAE6FF"/><text x="737" y="326" font-size="9" fill="#403294" text-anchor="middle">E5 UI</text>
+    <circle cx="812" cy="324" r="9" fill="#DFE1E6"/><text x="812" y="327" font-size="9" fill="#42526E" text-anchor="middle">3</text>
+  </g>
+  <g font-size="11">
+    <rect x="170" y="336" width="780" height="24" fill="#FAFBFC"/>
+    <rect x="180" y="341" width="13" height="13" rx="2" fill="#36B37E"/><text x="186" y="351" font-size="9" fill="#fff" text-anchor="middle">S</text>
+    <text x="200" y="351" font-size="9" fill="#5E6C84">PDR-8</text>
+    <text x="246" y="351" fill="#172B4D">US-08 핵심 효과음(SFX)</text>
+    <rect x="700" y="339" width="74" height="16" rx="8" fill="#FFF7E6"/><text x="737" y="350" font-size="9" fill="#974F00" text-anchor="middle">E6 오디오</text>
+    <circle cx="812" cy="348" r="9" fill="#DFE1E6"/><text x="812" y="351" font-size="9" fill="#42526E" text-anchor="middle">2</text>
+  </g>
+
+  <text x="182" y="382" font-size="10" fill="#5E6C84">S = Story · T = Task · 우측 숫자 = 스토리 포인트 · 색 = 에픽</text>
+  <text x="182" y="400" font-size="10" fill="#7A869A">Sprint 1에 끌어올린 5개(15pt) → "Start sprint"로 시작하면 Board로 이동</text>
+</svg>
