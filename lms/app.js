@@ -90,7 +90,8 @@
         a.dataset.path = it.path;
         a.dataset.title = it.title;
         const typeLabel = it.type === "practice" ? '<span class="type practice">연습</span>'
-                         : it.type === "guide" ? '<span class="type">가이드</span>' : "";
+                         : it.type === "guide" ? '<span class="type">가이드</span>'
+                         : it.type === "step" ? '<span class="type">단계</span>' : "";
         a.innerHTML = '<span class="tick">✓</span><span class="nm">' + escapeHtml(it.title) + "</span>" + typeLabel;
         a.addEventListener("click", () => closeSidebar());
         box.appendChild(a);

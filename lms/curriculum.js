@@ -23,8 +23,13 @@ window.CURRICULUM = {
       title: "Trello",
       badge: "Kanban",
       items: [
-        { path: "01_Trello/Guide.md",    title: "Trello 가이드",       type: "guide" },
-        { path: "01_Trello/Practice.md", title: "Trello 직접 해보기",  type: "practice", deliverable: "Kanban 보드" }
+        { path: "01_Trello/Guide.md",    title: "Trello 개요",          type: "guide" },
+        { path: "01_Trello/Step1.md",    title: "1단계 · 계정과 보드",    type: "step" },
+        { path: "01_Trello/Step2.md",    title: "2단계 · 리스트와 카드",  type: "step" },
+        { path: "01_Trello/Step3.md",    title: "3단계 · 카드 꾸미기",    type: "step" },
+        { path: "01_Trello/Step4.md",    title: "4단계 · 칸반 운영",      type: "step" },
+        { path: "01_Trello/Step5.md",    title: "5단계 · 자동화 & 마무리", type: "step" },
+        { path: "01_Trello/Practice.md", title: "Trello 직접 해보기",   type: "practice", deliverable: "Kanban 보드" }
       ]
     },
     {

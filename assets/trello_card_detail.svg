@@ -1,0 +1,50 @@
+<svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Malgun Gothic', Arial, sans-serif">
+  <text x="12" y="22" font-size="14" font-weight="700" fill="#172B4D">카드를 열면 — 여기서 작업을 관리합니다</text>
+
+  <!-- modal -->
+  <rect x="10" y="34" width="500" height="388" rx="12" fill="#FFFFFF" stroke="#C1C7D0"/>
+  <!-- title -->
+  <text x="28" y="64" font-size="14" font-weight="700" fill="#172B4D">🃏 US-05 절차적 바닥/플랫폼 생성</text>
+  <text x="28" y="84" font-size="10" fill="#5E6C84">📍 'In Progress' 리스트에 있음</text>
+  <line x1="20" y1="96" x2="500" y2="96" stroke="#EBECF0"/>
+
+  <!-- right action buttons -->
+  <text x="352" y="116" font-size="10" font-weight="700" fill="#5E6C84">카드에 추가</text>
+  <g font-size="11" fill="#42526E">
+    <rect x="350" y="124" width="142" height="28" rx="5" fill="#F4F5F7"/><text x="362" y="142">🏷️ Labels (라벨)</text>
+    <rect x="350" y="158" width="142" height="28" rx="5" fill="#F4F5F7"/><text x="362" y="176">☑️ Checklist</text>
+    <rect x="350" y="192" width="142" height="28" rx="5" fill="#F4F5F7"/><text x="362" y="210">📅 Dates (마감)</text>
+    <rect x="350" y="226" width="142" height="28" rx="5" fill="#F4F5F7"/><text x="362" y="244">👤 Members</text>
+  </g>
+
+  <!-- left content -->
+  <!-- labels -->
+  <text x="28" y="124" font-size="10" font-weight="700" fill="#5E6C84">라벨</text>
+  <rect x="28" y="130" width="76" height="18" rx="4" fill="#57D9A3"/><text x="66" y="143" font-size="9" fill="#fff" text-anchor="middle">E3 던전</text>
+  <rect x="110" y="130" width="64" height="18" rx="4" fill="#4C9AFF"/><text x="142" y="143" font-size="9" fill="#fff" text-anchor="middle">코어</text>
+
+  <!-- members -->
+  <text x="28" y="172" font-size="10" font-weight="700" fill="#5E6C84">담당(Members)</text>
+  <circle cx="40" cy="188" r="11" fill="#57D9A3"/><text x="40" y="192" font-size="9" fill="#fff" text-anchor="middle">DEV</text>
+  <circle cx="66" cy="188" r="11" fill="#998DD9"/><text x="66" y="192" font-size="8" fill="#fff" text-anchor="middle">ART</text>
+
+  <!-- due -->
+  <text x="28" y="220" font-size="10" font-weight="700" fill="#5E6C84">마감일(Due)</text>
+  <rect x="28" y="226" width="78" height="20" rx="4" fill="#FFF7E6"/><text x="67" y="240" font-size="10" fill="#974F00" text-anchor="middle">📅 7/17</text>
+
+  <!-- checklist -->
+  <text x="28" y="276" font-size="10" font-weight="700" fill="#5E6C84">체크리스트 — 세부 작업</text>
+  <text x="300" y="276" font-size="10" fill="#36B37E" text-anchor="end">33%</text>
+  <rect x="28" y="282" width="272" height="8" rx="4" fill="#EBECF0"/>
+  <rect x="28" y="282" width="90" height="8" rx="4" fill="#36B37E"/>
+  <g font-size="11" fill="#172B4D">
+    <rect x="28" y="298" width="13" height="13" rx="3" fill="#36B37E"/><text x="31" y="308" font-size="9" fill="#fff">✓</text>
+    <text x="50" y="309" fill="#7A869A" text-decoration="line-through">바닥 생성</text>
+    <rect x="28" y="318" width="13" height="13" rx="3" fill="#fff" stroke="#C1C7D0"/>
+    <text x="50" y="329">플랫폼 배치</text>
+    <rect x="28" y="338" width="13" height="13" rx="3" fill="#fff" stroke="#C1C7D0"/>
+    <text x="50" y="349">난이도 점증</text>
+  </g>
+
+  <text x="28" y="402" font-size="9" fill="#7A869A">라벨=분류 · 체크리스트=작은 할 일 · 마감=언제까지 · 멤버=누가</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'Malgun Gothic', Arial, sans-serif">
+  <text x="16" y="24" font-size="15" font-weight="700" fill="#172B4D">Trello 구조 — 4개의 상자만 기억하세요</text>
+
+  <!-- Workspace -->
+  <rect x="16" y="38" width="608" height="326" rx="10" fill="#EEF3FB" stroke="#B7C7E0"/>
+  <text x="30" y="60" font-size="12" font-weight="700" fill="#5E6C84">🏢 Workspace (작업공간)</text>
+
+  <!-- Board -->
+  <rect x="32" y="72" width="576" height="276" rx="9" fill="#2E7CD6"/>
+  <text x="46" y="94" font-size="12" font-weight="700" fill="#FFFFFF">▦ Board (보드) = 프로젝트 1개</text>
+
+  <!-- List 1 -->
+  <rect x="48" y="106" width="172" height="226" rx="8" fill="#EBECF0"/>
+  <text x="60" y="126" font-size="11" font-weight="700" fill="#172B4D">📋 List (리스트)</text>
+  <text x="60" y="140" font-size="9" fill="#5E6C84">= 진행 단계</text>
+  <rect x="58" y="150" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
+  <rect x="66" y="158" width="30" height="7" rx="3" fill="#4C9AFF"/>
+  <text x="66" y="178" font-size="10" fill="#172B4D">🃏 Card (카드)</text>
+  <rect x="58" y="190" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
+  <rect x="66" y="198" width="30" height="7" rx="3" fill="#57D9A3"/>
+  <text x="66" y="218" font-size="10" fill="#172B4D">🃏 카드 = 작업 1개</text>
+
+  <!-- List 2 -->
+  <rect x="234" y="106" width="172" height="226" rx="8" fill="#EBECF0"/>
+  <text x="246" y="126" font-size="11" font-weight="700" fill="#172B4D">📋 To Do</text>
+  <rect x="244" y="150" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
+  <rect x="252" y="158" width="30" height="7" rx="3" fill="#4C9AFF"/>
+  <text x="252" y="178" font-size="10" fill="#172B4D">US-01 자동 전진</text>
+  <rect x="244" y="190" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
+  <rect x="252" y="198" width="30" height="7" rx="3" fill="#4C9AFF"/>
+  <text x="252" y="210" font-size="10" fill="#172B4D">US-02 점프</text>
+
+  <!-- List 3 -->
+  <rect x="420" y="106" width="172" height="226" rx="8" fill="#EBECF0"/>
+  <text x="432" y="126" font-size="11" font-weight="700" fill="#172B4D">✅ Done</text>
+  <rect x="430" y="150" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
+  <rect x="438" y="158" width="30" height="7" rx="3" fill="#FF7452"/>
+  <text x="438" y="178" font-size="10" fill="#172B4D">US-09 빌드</text>
+
+  <!-- arrows note -->
+  <text x="48" y="350" font-size="10" fill="#7A869A">담는 순서: Workspace ▸ Board ▸ List ▸ Card  ·  일이 진행되면 카드를 오른쪽 리스트로 옮깁니다</text>
+</svg>
