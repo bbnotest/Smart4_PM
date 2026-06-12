@@ -102,11 +102,11 @@ window.CURRICULUM = {
 
   /* 대시보드 세로 카드 (커버 이미지 + 이름 + 설명) */
   cards: [
-    { label: "PM 기초", sub: "PM의 일 · 기본 용어",   cover: "assets/cover_pm.svg",      go: "00_PM_Basics/Guide.md",   match: "00_PM_Basics/" },
-    { label: "Jira",    sub: "업계표준 애자일/스크럼", cover: "assets/cover_jira.svg",    go: "02_Jira/Guide.md",        match: "02_Jira/" },
-    { label: "Asana",   sub: "직관적 작업·일정 관리",  cover: "assets/cover_asana.svg",   go: "03_Asana/Guide.md",       match: "03_Asana/" },
-    { label: "Trello",  sub: "가장 쉬운 칸반",         cover: "assets/cover_trello.svg",  go: "01_Trello/Guide.md",      match: "01_Trello/" },
-    { label: "Redmine", sub: "오픈소스 · 내장 간트",   cover: "assets/cover_redmine.svg", go: "04_Redmine/Guide.md",     match: "04_Redmine/" },
-    { label: "마무리",  sub: "상황에 맞는 툴 고르기",  cover: "assets/cover_wrap.svg",    go: "05_Capstone/Capstone.md", match: "05_Capstone/" }
+    { label: "PM 기초", sub: "PM의 역할·책임과 WBS·스프린트 등 기본 용어부터", cover: "assets/cover_pm.svg",      go: "00_PM_Basics/Guide.md",   match: "00_PM_Basics/" },
+    { label: "Jira",    sub: "에픽·백로그·스프린트·번다운까지 업계표준 스크럼", cover: "assets/cover_jira.svg",    go: "02_Jira/Guide.md",        match: "02_Jira/" },
+    { label: "Asana",   sub: "섹션·태스크와 List·Board·Calendar 다중 뷰 관리", cover: "assets/cover_asana.svg",   go: "03_Asana/Guide.md",       match: "03_Asana/" },
+    { label: "Trello",  sub: "카드를 끌어다 놓는 가장 쉬운 칸반 보드",          cover: "assets/cover_trello.svg",  go: "01_Trello/Guide.md",      match: "01_Trello/" },
+    { label: "Redmine", sub: "직접 설치하는 오픈소스, 무료 내장 간트 차트",     cover: "assets/cover_redmine.svg", go: "04_Redmine/Guide.md",     match: "04_Redmine/" },
+    { label: "마무리",  sub: "상황별로 어떤 툴이 맞는지 직접 고르는 연습",      cover: "assets/cover_wrap.svg",    go: "05_Capstone/Capstone.md", match: "05_Capstone/" }
   ]
 };

@@ -69,19 +69,20 @@ body[data-view="home"] .topbar,
 body[data-view="home"] .sidebar,
 body[data-view="home"] .backdrop{ display:none !important; }
 body[data-view="home"] .main{ padding:0 }
-.home{ width:100%; min-height:100vh; box-sizing:border-box;
-  padding:64px 16px; background:linear-gradient(135deg,#eaf1fc,#f4f1ff); }
-.home-inner{ width:100%; max-width:1180px; margin:0 auto; text-align:center }
+.home{ width:100%; min-height:100vh; box-sizing:border-box; display:flex;
+  padding:48px 20px; background:linear-gradient(135deg,#eaf1fc,#f4f1ff); }
+.home-inner{ width:100%; max-width:1240px; margin:auto; text-align:center }
 .home-title{ font-size:30px; margin:0 0 8px; color:var(--ink) }
 .home-sub{ color:var(--ink-soft); margin:0 0 30px; font-size:14px }
-.track-row{ display:flex; gap:18px; width:max-content; max-width:100%; margin:0 auto; overflow-x:auto; padding:12px 2px 22px }
-.vcard{ flex:0 0 200px; width:200px; background:#fff; border:1px solid var(--line); border-radius:16px;
+.track-row{ display:flex; gap:18px; flex-wrap:wrap; justify-content:center; align-items:stretch; padding:14px 0 6px }
+.vcard{ flex:0 0 184px; width:184px; background:#fff; border:1px solid var(--line); border-radius:16px;
   overflow:hidden; text-decoration:none; color:var(--ink); box-shadow:var(--shadow);
   transition:transform .12s, border-color .12s }
 .vcard:hover{ transform:translateY(-5px); border-color:var(--brand) }
-.vcard .cover{ display:block; width:100%; height:250px; object-fit:cover }
-.vcard .vc-name{ font-size:18px; font-weight:800; padding:16px 16px 4px }
-.vcard .vc-desc{ font-size:13px; color:var(--ink-soft); padding:0 16px 20px; line-height:1.6 }
+.vcard{ display:flex; flex-direction:column }
+.vcard .cover{ display:block; width:100%; height:240px; object-fit:cover }
+.vcard .vc-name{ font-size:18px; font-weight:800; padding:15px 16px 4px }
+.vcard .vc-desc{ font-size:12.5px; color:var(--ink-soft); padding:0 16px 18px; line-height:1.55; flex:1 1 auto }
 
 /* ---------- 레이아웃 ---------- */
 .layout{display:flex; min-height:calc(100vh - 56px)}
