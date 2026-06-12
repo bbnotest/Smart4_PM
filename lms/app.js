@@ -61,12 +61,15 @@
       return;
     }
     if (titleEl) titleEl.textContent = sec.title.replace(/^[^\w가-힣]+/, "").trim() + " · 학습 단계";
-    tree.innerHTML = sec.items.map(it => {
+    let html = "", lastGroup = null;
+    sec.items.forEach(it => {
+      if (it.group && it.group !== lastGroup) html += '<div class="side-group">' + escapeHtml(it.group) + "</div>";
+      lastGroup = it.group || null;
       const tag = it.type === "practice" ? '<span class="type practice">연습</span>'
                 : it.type === "guide" ? '<span class="type">개요</span>' : "";
-      return '<a class="nav-item' + (it.path === path ? " active" : "") + '" href="#/' + it.path + '" data-path="' + it.path + '" data-title="' + escapeHtml(it.title) + '">' +
-             '<span class="nm">' + escapeHtml(it.title) + "</span>" + tag + "</a>";
-    }).join("");
+      html += '<a class="nav-item' + (it.path === path ? " active" : "") + '" href="#/' + it.path + '" data-path="' + it.path + '" data-title="' + escapeHtml(it.title) + '"><span class="nm">' + escapeHtml(it.title) + "</span>" + tag + "</a>";
+    });
+    tree.innerHTML = html;
     $$(".nav-item", tree).forEach(a => a.addEventListener("click", closeSidebar));
   }
 

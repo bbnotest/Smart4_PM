@@ -96,6 +96,8 @@ body[data-view="home"] .main{ padding:0 }
 }
 .side-title:empty{display:none}
 .side-hint{padding:18px 12px; color:var(--ink-soft); font-size:13px; line-height:1.8}
+.side-group{ font-size:11px; font-weight:800; color:var(--brand); background:var(--brand-soft); padding:5px 11px; border-radius:7px; margin:14px 4px 5px; letter-spacing:.4px }
+.side-group:first-child{ margin-top:2px }
 .nav-item{
   display:flex; align-items:center; gap:9px; padding:9px 11px; margin:3px 0;
   border-radius:9px; color:var(--ink); text-decoration:none; font-size:13.5px; cursor:pointer;

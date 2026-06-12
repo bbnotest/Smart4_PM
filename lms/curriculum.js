@@ -24,12 +24,15 @@ window.CURRICULUM = {
       badge: "Scrum",
       items: [
         { path: "02_Jira/Guide.md",    title: "Jira 개요",             type: "guide" },
-        { path: "02_Jira/Step1.md",    title: "1단계 · 계정과 프로젝트", type: "step" },
-        { path: "02_Jira/Step2.md",    title: "2단계 · 작업 계층",      type: "step" },
-        { path: "02_Jira/Step3.md",    title: "3단계 · 백로그",         type: "step" },
-        { path: "02_Jira/Step4.md",    title: "4단계 · 스프린트",       type: "step" },
-        { path: "02_Jira/Step5.md",    title: "5단계 · Timeline",      type: "step" },
-        { path: "02_Jira/Step6.md",    title: "6단계 · 리포트 & 마무리", type: "step" },
+        { path: "02_Jira/Step1.md",    title: "1단계 · 계정과 프로젝트", type: "step", group: "🟢 기초 단계" },
+        { path: "02_Jira/Step2.md",    title: "2단계 · 작업 계층",      type: "step", group: "🟢 기초 단계" },
+        { path: "02_Jira/Step3.md",    title: "3단계 · 백로그",         type: "step", group: "🔵 실무 단계" },
+        { path: "02_Jira/Step4.md",    title: "4단계 · 스프린트",       type: "step", group: "🔵 실무 단계" },
+        { path: "02_Jira/Step5.md",    title: "5단계 · Timeline",      type: "step", group: "🔵 실무 단계" },
+        { path: "02_Jira/Step6.md",    title: "6단계 · 리포트",         type: "step", group: "🔵 실무 단계" },
+        { path: "02_Jira/Step7.md",    title: "7단계 · JQL & 필터",    type: "step", group: "🟣 응용 단계" },
+        { path: "02_Jira/Step8.md",    title: "8단계 · 자동화",         type: "step", group: "🟣 응용 단계" },
+        { path: "02_Jira/Step9.md",    title: "9단계 · 대시보드",       type: "step", group: "🟣 응용 단계" },
         { path: "02_Jira/Practice.md", title: "Jira 직접 해보기",     type: "practice", deliverable: "백로그 + 스프린트 + Timeline" }
       ]
     },
