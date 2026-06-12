@@ -24,7 +24,7 @@
   </g>
 
   <!-- project row -->
-  <text x="10" y="92" font-size="11" font-weight="700" fill="#2A2A2A">📁 Pixel Dungeon Run</text>
+  <text x="10" y="92" font-size="11" font-weight="700" fill="#2A2A2A">📁 Pixel Dungeon</text>
 
   <!-- E2 parent -->
   <text x="20" y="114" font-size="10" font-weight="700" fill="#2A2A2A">▾ #100 E2 코어 플레이</text>
@@ -32,19 +32,19 @@
   <path d="M280 114 l4 6 l-8 0 z" fill="#888"/><path d="M529 114 l4 6 l-8 0 z" fill="#888"/>
 
   <!-- #1 US-01 60% -->
-  <text x="34" y="136" font-size="10" fill="#444">#1 US-01 자동 전진</text>
+  <text x="34" y="136" font-size="10" fill="#444">#1 US-01 플레이어 이동</text>
   <rect x="280" y="130" width="83" height="11" rx="2" fill="#AFC8E6"/>
   <rect x="280" y="130" width="50" height="11" rx="2" fill="#3B6EA5"/>
   <text x="368" y="139" font-size="9" fill="#3B6EA5">60%</text>
 
   <!-- #2 US-02 30% -->
-  <text x="34" y="162" font-size="10" fill="#444">#2 US-02 점프(탭)</text>
+  <text x="34" y="162" font-size="10" fill="#444">#2 US-02 공격 입력</text>
   <rect x="280" y="156" width="166" height="11" rx="2" fill="#AFC8E6"/>
   <rect x="280" y="156" width="50" height="11" rx="2" fill="#3B6EA5"/>
   <text x="451" y="165" font-size="9" fill="#3B6EA5">30%</text>
 
   <!-- #4 US-04 0% -->
-  <text x="34" y="188" font-size="10" fill="#444">#4 US-04 충돌/게임오버</text>
+  <text x="34" y="188" font-size="10" fill="#444">#4 US-04 턴제 전투(HP)</text>
   <rect x="363" y="182" width="83" height="11" rx="2" fill="#AFC8E6"/>
   <text x="451" y="191" font-size="9" fill="#999">0%</text>
 
@@ -54,12 +54,12 @@
   <path d="M446 214 l4 6 l-8 0 z" fill="#888"/><path d="M695 214 l4 6 l-8 0 z" fill="#888"/>
 
   <!-- #5 US-05 -->
-  <text x="34" y="236" font-size="10" fill="#444">#5 US-05 절차적 생성</text>
+  <text x="34" y="236" font-size="10" fill="#444">#5 US-05 던전 생성</text>
   <rect x="446" y="230" width="166" height="11" rx="2" fill="#AFC8E6"/>
   <text x="617" y="239" font-size="9" fill="#999">0%</text>
 
   <!-- #6 US-06 -->
-  <text x="34" y="262" font-size="10" fill="#444">#6 US-06 점수 집계</text>
+  <text x="34" y="262" font-size="10" fill="#444">#6 US-06 적 추적 AI</text>
   <rect x="529" y="256" width="83" height="11" rx="2" fill="#AFC8E6"/>
   <text x="617" y="265" font-size="9" fill="#999">0%</text>
 

@@ -42,7 +42,7 @@ Trello·Jira·Asana는 회사(클라우드)가 서버를 돌려주지만, **Redm
 | [**6단계 · 시간기록 & 마무리**](Step6.md) | 시간기록 + 셀프 체크 + 면접 |
 | [**직접 해보기**](Practice.md) | 혼자 처음부터 만들어보기 |
 
-> 💡 연습용 프로젝트는 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md). 1단계(설치)만 넘으면 나머지는 쉬워요.
+> 💡 연습용 프로젝트는 [Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md). 1단계(설치)만 넘으면 나머지는 쉬워요.
 
 ---
 

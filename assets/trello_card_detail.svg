@@ -4,7 +4,7 @@
   <!-- modal -->
   <rect x="10" y="34" width="500" height="388" rx="12" fill="#FFFFFF" stroke="#C1C7D0"/>
   <!-- title -->
-  <text x="28" y="64" font-size="14" font-weight="700" fill="#172B4D">🃏 US-05 절차적 바닥/플랫폼 생성</text>
+  <text x="28" y="64" font-size="14" font-weight="700" fill="#172B4D">🃏 US-05 절차적 던전 생성</text>
   <text x="28" y="84" font-size="10" fill="#5E6C84">📍 'In Progress' 리스트에 있음</text>
   <line x1="20" y1="96" x2="500" y2="96" stroke="#EBECF0"/>
 
@@ -39,11 +39,11 @@
   <rect x="28" y="282" width="90" height="8" rx="4" fill="#36B37E"/>
   <g font-size="11" fill="#172B4D">
     <rect x="28" y="298" width="13" height="13" rx="3" fill="#36B37E"/><text x="31" y="308" font-size="9" fill="#fff">✓</text>
-    <text x="50" y="309" fill="#7A869A" text-decoration="line-through">바닥 생성</text>
+    <text x="50" y="309" fill="#7A869A" text-decoration="line-through">방 생성</text>
     <rect x="28" y="318" width="13" height="13" rx="3" fill="#fff" stroke="#C1C7D0"/>
-    <text x="50" y="329">플랫폼 배치</text>
+    <text x="50" y="329">복도 연결</text>
     <rect x="28" y="338" width="13" height="13" rx="3" fill="#fff" stroke="#C1C7D0"/>
-    <text x="50" y="349">난이도 점증</text>
+    <text x="50" y="349">계단 배치</text>
   </g>
 
   <text x="28" y="402" font-size="9" fill="#7A869A">라벨=분류 · 체크리스트=작은 할 일 · 마감=언제까지 · 멤버=누가</text>

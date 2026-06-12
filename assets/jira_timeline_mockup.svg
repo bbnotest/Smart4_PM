@@ -26,7 +26,7 @@
     <rect x="176" y="90" width="192" height="16" rx="4" fill="#8993A4"/><text x="184" y="102" font-size="9" fill="#fff">GDD·밸런스</text>
 
     <text x="14" y="134">E2 코어</text>
-    <rect x="176" y="124" width="288" height="16" rx="4" fill="#4C9AFF"/><text x="184" y="136" font-size="9" fill="#fff">러닝·점프·충돌</text>
+    <rect x="176" y="124" width="288" height="16" rx="4" fill="#4C9AFF"/><text x="184" y="136" font-size="9" fill="#fff">이동·전투·턴</text>
 
     <text x="14" y="168">E3 던전</text>
     <rect x="368" y="158" width="192" height="16" rx="4" fill="#57D9A3"/><text x="376" y="170" font-size="9" fill="#fff">생성·적·아이템</text>

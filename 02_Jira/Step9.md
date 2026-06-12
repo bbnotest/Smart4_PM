@@ -17,7 +17,7 @@
 
 ## A. 대시보드 만들기
 
-1. 좌측 **Dashboards → Create dashboard** (이름: `Pixel Dungeon Run 현황`)
+1. 좌측 **Dashboards → Create dashboard** (이름: `Pixel Dungeon 현황`)
 2. **Add gadget** 으로 위젯을 올립니다:
    - **Sprint Burndown** — 스프린트 진척
    - **Pie Chart** — 우선순위/담당자 분포

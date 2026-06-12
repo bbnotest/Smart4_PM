@@ -43,7 +43,7 @@
 | [**5단계 · 자동화 & 마무리**](Step5.md) | Butler + 셀프 체크 + 면접 멘트 |
 | [**직접 해보기**](Practice.md) | 혼자 처음부터 만들어보기 |
 
-> 💡 연습용 가상 프로젝트는 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)(작은 모바일 게임)입니다. 필요한 내용은 각 단계에 다시 적어두어 따로 안 읽어도 됩니다.
+> 💡 연습용 가상 프로젝트는 [Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md)(작은 모바일 게임)입니다. 필요한 내용은 각 단계에 다시 적어두어 따로 안 읽어도 됩니다.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🟦 Jira 직접 해보기 (연습)
 
-> [가이드](Guide.md)를 봤으니, 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **백로그 + Sprint 1 + Timeline**을 직접 만들어 보세요.
+> [가이드](Guide.md)를 봤으니, 같은 예제 [Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md)로 **백로그 + Sprint 1 + Timeline**을 직접 만들어 보세요.
 
 ---
 
@@ -15,7 +15,7 @@
 ## ✋ 따라 만들기 — 백로그 & 스프린트
 
 ### 1. 프로젝트
-- 팀관리형 **Scrum** 프로젝트: 이름 `Pixel Dungeon Run`, 키 `PDR`
+- 팀관리형 **Scrum** 프로젝트: 이름 `Pixel Dungeon`, 키 `PD`
 - 왼쪽에 Backlog · Board · Timeline 메뉴 확인 (없으면 Project settings → Features에서 켜기)
 
 ### 2. 에픽 7개
@@ -25,26 +25,26 @@
 
 | 키 | 요약 | 타입 | 에픽 | 포인트 | 담당 |
 |---|---|---|---|:--:|:--:|
-| PDR-1 | US-01 플레이어 자동 전진 | Story | E2 | 3 | DEV |
-| PDR-2 | US-02 점프(탭) | Story | E2 | 2 | DEV |
-| PDR-3 | US-03 슬라이드 | Story | E2 | 2 | DEV |
-| PDR-4 | US-04 충돌/게임오버 | Story | E2 | 3 | DEV |
-| PDR-5 | US-05 절차적 생성 | Story | E3 | 5 | DEV |
-| PDR-6 | US-06 점수 집계 | Story | E3 | 2 | DEV |
-| PDR-7 | US-07 결과 화면 | Story | E5 | 3 | ART |
-| PDR-8 | US-08 효과음 | Story | E6 | 2 | ART |
-| PDR-9 | US-09 프로토 빌드 | **Task** | E7 | 3 | DEV |
+| PD-1 | US-01 플레이어 이동(턴제) | Story | E2 | 3 | DEV |
+| PD-2 | US-02 공격 입력 | Story | E2 | 2 | DEV |
+| PD-3 | US-03 이동 처리 | Story | E2 | 2 | DEV |
+| PD-4 | US-04 턴제 전투(HP) | Story | E2 | 3 | DEV |
+| PD-5 | US-05 던전 생성 | Story | E3 | 5 | DEV |
+| PD-6 | US-06 적 추적 AI | Story | E3 | 2 | DEV |
+| PD-7 | US-07 게임오버 화면 | Story | E5 | 3 | ART |
+| PD-8 | US-08 효과음 | Story | E6 | 2 | ART |
+| PD-9 | US-09 프로토 빌드 | **Task** | E7 | 3 | DEV |
 
 - 9개 생성 + 에픽 연결 + 포인트 + 담당자 모두 입력
 
 ### 4. 서브태스크 (WBS 심화)
-- **PDR-5**에 서브태스크 3개: `바닥 생성` / `플랫폼 배치` / `난이도 점증`
+- **PD-5**에 서브태스크 3개: `방 생성` / `복도 연결` / `계단 배치`
 
 ### 5. Sprint 1
 - Sprint 생성, 기간 07/06~07/17
-- PDR-1·2·4·5·9 (합 **15pt**)를 Sprint 1로 이동
+- PD-1·2·4·5·9 (합 **15pt**)를 Sprint 1로 이동
 - Sprint goal `M1 프로토타입` 입력 후 **Start sprint**
-- Board에서 PDR-9를 `Done`, PDR-4를 `In Progress`로 이동
+- Board에서 PD-9를 `Done`, PD-4를 `In Progress`로 이동
 
 ## ✋ 따라 만들기 — Timeline
 
@@ -71,7 +71,7 @@
 ## 🚀 더 해보기 (선택)
 
 - **번다운**: 이슈 몇 개를 Done 처리한 뒤 Reports → Burndown 확인
-- **JQL 저장 필터**: `project = PDR AND assignee = currentUser()` 저장
+- **JQL 저장 필터**: `project = PD AND assignee = currentUser()` 저장
 - **버전**: Releases에서 M1~M4 버전 생성 후 이슈에 Fix version 지정
 - **컬럼 추가**: Board 설정에서 `Review` 컬럼 추가
 

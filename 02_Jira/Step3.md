@@ -23,13 +23,13 @@
 
 | 요약 | 타입 | 에픽 | 포인트 | 담당 |
 |---|---|---|:--:|:--:|
-| US-01 자동 전진 | Story | E2 | 3 | DEV |
-| US-02 점프(탭) | Story | E2 | 2 | DEV |
-| US-03 슬라이드 | Story | E2 | 2 | DEV |
-| US-04 충돌/게임오버 | Story | E2 | 3 | DEV |
-| US-05 절차적 생성 | Story | E3 | 5 | DEV |
-| US-06 점수 집계 | Story | E3 | 2 | DEV |
-| US-07 결과 화면 | Story | E5 | 3 | ART |
+| US-01 플레이어 이동 | Story | E2 | 3 | DEV |
+| US-02 공격 입력 | Story | E2 | 2 | DEV |
+| US-03 이동 처리 | Story | E2 | 2 | DEV |
+| US-04 턴제 전투(HP) | Story | E2 | 3 | DEV |
+| US-05 던전 생성 | Story | E3 | 5 | DEV |
+| US-06 적 추적 AI | Story | E3 | 2 | DEV |
+| US-07 게임오버 화면 | Story | E5 | 3 | ART |
 | US-08 효과음 | Story | E6 | 2 | ART |
 | US-09 프로토 빌드 | **Task** | E7 | 3 | DEV |
 

@@ -1,6 +1,6 @@
 # 🟥 Redmine 직접 해보기 (연습)
 
-> [가이드](Guide.md)를 봤으니, Redmine을 직접 띄우고 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **상위/하위 이슈(WBS) + 버전 + 내장 Gantt**를 직접 만들어 보세요.
+> [가이드](Guide.md)를 봤으니, Redmine을 직접 띄우고 같은 예제 [Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md)로 **상위/하위 이슈(WBS) + 버전 + 내장 Gantt**를 직접 만들어 보세요.
 
 ---
 
@@ -18,7 +18,7 @@
 - Administration → **Load the default configuration**
 
 ### 1. 프로젝트
-- `Pixel Dungeon Run` 생성
+- `Pixel Dungeon` 생성
 - 모듈 체크: Issue tracking · **Gantt** · **Roadmap** · Time tracking · Calendar
 
 ### 2. 상위 이슈(에픽 역할)
@@ -28,11 +28,11 @@
 
 | 이슈 | 상위(Parent) | 시작 | 마감 | %Done |
 |---|---|:--:|:--:|:--:|
-| US-01 자동 전진 | E2 코어 플레이 | 7/06 | 7/12 | 60 |
-| US-02 점프(탭) | E2 코어 플레이 | 7/06 | 7/19 | 30 |
-| US-04 충돌/게임오버 | E2 코어 플레이 | 7/13 | 7/19 | 0 |
-| US-05 절차적 생성 | E3 던전·콘텐츠 | 7/20 | 7/31 | 0 |
-| US-06 점수 집계 | E3 던전·콘텐츠 | 7/27 | 8/02 | 0 |
+| US-01 플레이어 이동 | E2 코어 플레이 | 7/06 | 7/12 | 60 |
+| US-02 공격 입력 | E2 코어 플레이 | 7/06 | 7/19 | 30 |
+| US-04 턴제 전투(HP) | E2 코어 플레이 | 7/13 | 7/19 | 0 |
+| US-05 던전 생성 | E3 던전·콘텐츠 | 7/20 | 7/31 | 0 |
+| US-06 적 추적 AI | E3 던전·콘텐츠 | 7/27 | 8/02 | 0 |
 
 ### 4. 버전(마일스톤)
 - Settings → Versions: `M1 프로토타입`(7/17), `M2 알파`(7/31)

@@ -41,7 +41,7 @@
 | [**5단계 · 마일스톤 & 마무리**](Step5.md) | 마일스톤 + 셀프 체크 + 면접 |
 | [**직접 해보기**](Practice.md) | 혼자 처음부터 만들어보기 |
 
-> 💡 연습용 프로젝트는 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md).
+> 💡 연습용 프로젝트는 [Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md).
 > ⚠️ 무료엔 **Timeline(간트)이 없습니다**. 간트는 Jira·Redmine에서 배우고, 여기선 Calendar로 일정 감각을 익혀요.
 
 ---

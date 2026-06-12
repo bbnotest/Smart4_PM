@@ -36,7 +36,7 @@
 
 ## 🎮 우리가 만들 게임 (모든 트랙 공통 예제)
 
-모든 툴 트랙은 같은 가상 게임 **[Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)**(작은 모바일 러너)으로 실습합니다. 같은 작업을 4개 툴에 넣어보며 차이를 느낍니다.
+모든 툴 트랙은 같은 가상 게임 **[Pixel Dungeon](../00_Overview/03_Game_Project_Scenario.md)**(작은 로그라이크 던전 게임)으로 실습합니다. 같은 작업을 4개 툴에 넣어보며 차이를 느낍니다.
 
 ---
 

@@ -25,10 +25,10 @@
   <text x="246" y="126" font-size="11" font-weight="700" fill="#172B4D">📋 To Do</text>
   <rect x="244" y="150" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
   <rect x="252" y="158" width="30" height="7" rx="3" fill="#4C9AFF"/>
-  <text x="252" y="178" font-size="10" fill="#172B4D">US-01 자동 전진</text>
+  <text x="252" y="178" font-size="10" fill="#172B4D">US-01 플레이어 이동</text>
   <rect x="244" y="190" width="152" height="34" rx="5" fill="#fff" stroke="#091E4214"/>
   <rect x="252" y="198" width="30" height="7" rx="3" fill="#4C9AFF"/>
-  <text x="252" y="210" font-size="10" fill="#172B4D">US-02 점프</text>
+  <text x="252" y="210" font-size="10" fill="#172B4D">US-02 공격 입력</text>
 
   <!-- List 3 -->
   <rect x="420" y="106" width="172" height="226" rx="8" fill="#EBECF0"/>

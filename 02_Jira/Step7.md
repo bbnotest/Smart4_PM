@@ -25,9 +25,9 @@
 `Basic` 옆 **JQL** 로 전환하면 한 줄로 정밀 검색이 됩니다.
 
 ```
-project = PDR AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
-project = PDR AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
-project = PDR AND "Epic Link" = "E2 코어 플레이"                          # 특정 에픽의 작업
+project = PD AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
+project = PD AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
+project = PD AND "Epic Link" = "E2 코어 플레이"                          # 특정 에픽의 작업
 ```
 
 ## C. 필터 저장 & 공유

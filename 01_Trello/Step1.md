@@ -23,7 +23,7 @@
 보드 = **프로젝트 하나**를 담는 화이트보드입니다.
 
 1. **`Create`**(만들기) 버튼 클릭 → **`Create board`**
-2. 제목에 `Pixel Dungeon Run - Sprint 1` 입력
+2. 제목에 `Pixel Dungeon - Sprint 1` 입력
 3. **`Create`** 클릭
 
 ![Trello 구조](../assets/trello_structure.svg)

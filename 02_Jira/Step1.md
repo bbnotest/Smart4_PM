@@ -35,7 +35,7 @@
 1. 왼쪽 위 **`Projects` → `Create project`**
 2. 템플릿 **`Scrum`** 선택 → **`Use template`**
 3. 프로젝트 유형은 **`Team-managed`(팀 관리형)** 선택 ← 초보는 무조건 이것!
-4. 이름 `Pixel Dungeon Run`, Key `PDR` → **Create**
+4. 이름 `Pixel Dungeon`, Key `PD` → **Create**
 
 > 🖼️ 공식 스크린샷 자리 — 스크럼 프로젝트 생성
 > 출처: https://www.atlassian.com/software/jira/templates/scrum

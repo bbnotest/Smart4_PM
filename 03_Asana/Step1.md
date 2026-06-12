@@ -20,7 +20,7 @@
 ## B. 프로젝트 만들기
 
 1. 왼쪽 **`+` → `Project` → `Blank project`**(빈 프로젝트)
-2. 이름 `Pixel Dungeon Run`, 기본 레이아웃 **List** → **Create project**
+2. 이름 `Pixel Dungeon`, 기본 레이아웃 **List** → **Create project**
 
 > ✅ 상단에 **List · Board · Timeline · Calendar** 탭이 보이면 성공.
 

@@ -70,7 +70,7 @@ graph LR
 
 ## 7. 공통 예제로 비교하며 익히기
 
-모든 가이드는 같은 가상 게임 프로젝트 **[Pixel Dungeon Run](03_Game_Project_Scenario.md)** 을 사용합니다. 같은 작업을 4개 툴에 넣어보면 "이게 Trello에선 카드, Jira에선 스토리, Asana에선 태스크, Redmine에선 이슈" 라는 **대응 관계**가 눈에 들어옵니다 — 이게 이 가이드의 핵심 학습 경험입니다.
+모든 가이드는 같은 가상 게임 프로젝트 **[Pixel Dungeon](03_Game_Project_Scenario.md)** 을 사용합니다. 같은 작업을 4개 툴에 넣어보면 "이게 Trello에선 카드, Jira에선 스토리, Asana에선 태스크, Redmine에선 이슈" 라는 **대응 관계**가 눈에 들어옵니다 — 이게 이 가이드의 핵심 학습 경험입니다.
 
 ---
 

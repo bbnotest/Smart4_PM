@@ -21,7 +21,7 @@
 
 ```mermaid
 graph TD
-    EP["🟪 Epic · 큰 덩어리<br/>E2 코어 플레이"] --> ST["🟩 Story · 실제 작업<br/>US-01 자동 전진"]
+    EP["🟪 Epic · 큰 덩어리<br/>E2 코어 플레이"] --> ST["🟩 Story · 실제 작업<br/>US-01 플레이어 이동"]
     ST --> SUB["⬜ Sub-task · 더 잘게<br/>입력 처리"]
 ```
 

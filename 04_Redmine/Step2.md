@@ -18,7 +18,7 @@
 ## B. 프로젝트 만들기
 
 1. 상단 **`Projects` → `New project`**
-2. Name `Pixel Dungeon Run`
+2. Name `Pixel Dungeon`
 3. **Modules(모듈)** 체크(중요!): `Issue tracking` · **`Gantt`** · `Calendar` · `Time tracking` · **`Roadmap`** · `Wiki`
 4. **Trackers** 에서 Bug/Feature/Support 체크 → **Create**
 
