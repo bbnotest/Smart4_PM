@@ -149,6 +149,15 @@ button{font-family:inherit}
 .nav-btns a:hover{border-color:var(--brand); color:var(--brand)}
 .nav-btns a.disabled{opacity:.4; pointer-events:none}
 
+/* ---------- 상황 시나리오 박스 ---------- */
+.doc .scenario{
+  background:var(--chrome-2); border:1px solid var(--line); border-left:4px solid #8c97a5;
+  border-radius:10px; padding:13px 16px; margin:16px 0; font-size:14px; line-height:1.7; color:var(--paper-ink);
+}
+.doc .scenario .who{ display:block; font-size:12px; font-weight:700; letter-spacing:.3px; color:var(--ink-soft); margin-bottom:6px; }
+.doc .scenario b{ color:var(--brand); }
+.doc .scenario .team{ display:block; margin-top:8px; font-size:12.5px; color:var(--ink-soft); }
+
 /* ---------- 대시보드 ---------- */
 .dash{width:100%; max-width:980px}
 .hero{

@@ -285,10 +285,10 @@
       '<div class="dash">' +
         '<div class="hero">' +
           "<h1>🎮 " + escapeHtml(C.title) + "</h1>" +
-          "<p>" + escapeHtml(C.subtitle) + " · 4개 협업툴을 혼자 따라 하며 익히는 가이드</p>" +
+          "<p>" + escapeHtml(C.subtitle) + " · PM 기초부터, 팀으로 따라 하며 익히는 실습 가이드</p>" +
           '<div class="hero-prog"><div class="bar"><span id="heroFill"></span></div><small id="heroPctTxt"></small></div>' +
         "</div>" +
-        '<div class="section-h">🧭 가이드 한눈에 (클릭하여 시작)</div>' +
+        '<div class="section-h">🎯 무엇을 배울까요? — 트랙을 고르세요</div>' +
         '<div class="day-grid">' + dayCards + "</div>" +
         '<div class="section-h">✋ 직접 만들어보기</div>' +
         '<div class="deliverables">' + delItems + "</div>" +
