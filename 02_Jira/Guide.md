@@ -4,9 +4,13 @@
 > ⏱️ 전체 90~120분(가장 비중 큼) · 💳 무료(사용자 10명) · 🧰 이메일 1개
 
 <div class="scenario">
-<span class="who">🎬 연속 시나리오 · Pixelforge Studio</span>
-당신은 신생 스튜디오 <b>Pixelforge</b>의 PM입니다. 이 트랙의 6단계는 하나의 이야기로 이어집니다 — <b>입사 첫날 프로젝트 세팅 → 백로그 → 스프린트 → 로드맵 → 진척 점검</b>. 게임 <b>Pixel Dungeon Run</b>을 Jira로 굴려봅니다.
-<span class="team">👥 <b>팀 학습</b> — 한 명이 PM 화면을 공유해 진행하고, 각 단계의 작업은 팀원이 나눠 맡습니다.</span>
+<span class="who">🎬 연속 시나리오</span>
+<ul>
+<li>여러분은 게임 회사의 <b>PM</b>입니다.</li>
+<li>첫 프로젝트로 작은 모바일 게임 <b>Pixel Dungeon Run</b>을 Jira로 관리하게 되었습니다.</li>
+<li>이 트랙의 6단계는 하나의 이야기로 이어집니다 — <b>프로젝트 세팅 → 백로그 → 스프린트 → 로드맵 → 진척 점검</b>.</li>
+</ul>
+<span class="team">👥 <b>팀 학습</b> — 한 명이 PM 화면을 공유해 진행하고, 단계별 작업은 팀원이 나눠 맡습니다.</span>
 </div>
 
 ---

@@ -290,13 +290,6 @@
         "</div>" +
         '<div class="section-h">🎯 무엇을 배울까요? — 트랙을 고르세요</div>' +
         '<div class="day-grid">' + dayCards + "</div>" +
-        '<div class="section-h">✋ 직접 만들어보기</div>' +
-        '<div class="deliverables">' + delItems + "</div>" +
-        '<div class="section-h">📚 먼저 읽기</div>' +
-        '<div class="deliverables">' +
-          '<a href="#/README.md"><span class="dot" style="background:var(--brand)"></span>가이드 소개 (README)</a>' +
-          '<a href="#/00_Overview/00_Curriculum_Overview.md"><span class="dot" style="background:var(--brand)"></span>이 가이드 사용법</a>' +
-        "</div>" +
       "</div>";
     refreshProgressUI();
   }
