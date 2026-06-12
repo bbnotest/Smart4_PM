@@ -1,6 +1,6 @@
 # 🟧 Asana 직접 해보기 (연습)
 
-> [가이드](Guide.md)를 봤으니, 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **섹션·태스크·서브태스크 + 다중 뷰 + 마일스톤**을 직접 만들어 보세요. (예상 40~60분)
+> [가이드](Guide.md)를 봤으니, 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **섹션·태스크·서브태스크 + 다중 뷰 + 마일스톤**을 직접 만들어 보세요.
 
 ---
 

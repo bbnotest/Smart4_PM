@@ -1,13 +1,13 @@
 # 🟥 Redmine · 1단계 — Redmine 띄우기 (가장 큰 관문)
 
-> 🎯 이번 단계 목표: **Docker로 Redmine을 띄우고 로그인한다.** (약 20분)
+> 🎯 이번 단계 목표: **Docker로 Redmine을 띄우고 로그인한다.**
 > 📍 [← 개요](Guide.md) · 다음 [2단계 →](Step2.md)
 
 > 이 단계만 넘으면 나머지는 쉬워요. 천천히 따라오세요. 💪
 
 ---
 
-## A. Docker Desktop 설치 (10분)
+## A. Docker Desktop 설치
 
 1. **https://www.docker.com/products/docker-desktop/** 에서 OS용 받아 설치
 2. 설치 후 **Docker Desktop 실행** → 고래 아이콘이 "Engine running"이면 준비 완료

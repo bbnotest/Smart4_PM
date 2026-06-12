@@ -1,6 +1,6 @@
 # 🟧 Asana · 4단계 — 뷰 전환 (Asana의 강점)
 
-> 🎯 이번 단계 목표: **같은 데이터를 List·Board·Calendar로 바꿔 본다.** (약 8분)
+> 🎯 이번 단계 목표: **같은 데이터를 List·Board·Calendar로 바꿔 본다.**
 > 📍 [← 3단계](Step3.md) · 다음 [5단계 →](Step5.md)
 
 ---

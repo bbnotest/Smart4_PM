@@ -1,6 +1,6 @@
 # 🟥 Redmine 직접 해보기 (연습)
 
-> [가이드](Guide.md)를 봤으니, Redmine을 직접 띄우고 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **상위/하위 이슈(WBS) + 버전 + 내장 Gantt**를 직접 만들어 보세요. (예상 60~90분, 설치 포함)
+> [가이드](Guide.md)를 봤으니, Redmine을 직접 띄우고 같은 예제 [Pixel Dungeon Run](../00_Overview/03_Game_Project_Scenario.md)로 **상위/하위 이슈(WBS) + 버전 + 내장 Gantt**를 직접 만들어 보세요.
 
 ---
 

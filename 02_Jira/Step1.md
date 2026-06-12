@@ -16,7 +16,7 @@
 
 ---
 
-## A. 계정·사이트 만들기 (7분)
+## A. 계정·사이트 만들기
 
 1. **https://www.atlassian.com/software/jira/free** 접속 → **`Get it free`**
 2. 이메일/구글로 가입
@@ -30,7 +30,7 @@
 
 ---
 
-## B. 스크럼 프로젝트 만들기 (5분)
+## B. 스크럼 프로젝트 만들기
 
 1. 왼쪽 위 **`Projects` → `Create project`**
 2. 템플릿 **`Scrum`** 선택 → **`Use template`**
