@@ -9,7 +9,7 @@ window.CURRICULUM = {
   sections: [
     {
       id: "pm",
-      title: "📚 PM 기초",
+      title: "PM 기초",
       badge: "기초",
       items: [
         { path: "00_PM_Basics/Guide.md", title: "PM 기초 개요",        type: "guide" },
@@ -81,7 +81,7 @@ window.CURRICULUM = {
     },
     {
       id: "wrapup",
-      title: "🏁 마무리",
+      title: "마무리",
       badge: "툴 선택",
       items: [
         { path: "05_Capstone/Capstone.md", title: "마무리 — 툴 고르기", type: "doc", deliverable: "상황별 툴 선택" }
@@ -89,7 +89,7 @@ window.CURRICULUM = {
     },
     {
       id: "ref",
-      title: "📖 참고 자료",
+      title: "참고 자료",
       items: [
         { path: "README.md",                                title: "가이드 소개 (README)", type: "doc" },
         { path: "00_Overview/00_Curriculum_Overview.md",    title: "이 가이드 사용법",      type: "doc" },

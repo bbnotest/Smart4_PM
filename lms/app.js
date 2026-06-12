@@ -41,7 +41,7 @@
   /* ---------------- 상단 "학습 선택" 드롭다운 ---------------- */
   function buildTrackMenu() {
     const menu = $("#trackMenu");
-    let html = '<a href="#/" class="tm-item tm-home">🏠 대시보드</a>';
+    let html = '<a href="#/" class="tm-item tm-home">대시보드</a>';
     C.sections.forEach(sec => {
       const first = sec.items[0];
       if (!first) return;
