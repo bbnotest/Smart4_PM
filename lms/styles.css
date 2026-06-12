@@ -68,12 +68,12 @@ body[data-view="home"] .topbar,
 body[data-view="home"] .sidebar,
 body[data-view="home"] .backdrop{ display:none !important; }
 body[data-view="home"] .main{ padding:0 }
-.home{ width:100%; min-height:100vh; display:flex; align-items:center; justify-content:center;
-  padding:30px 16px; background:linear-gradient(135deg,#eaf1fc,#f4f1ff); }
-.home-inner{ width:100%; max-width:1180px; text-align:center }
+.home{ width:100%; min-height:100vh; box-sizing:border-box;
+  padding:64px 16px; background:linear-gradient(135deg,#eaf1fc,#f4f1ff); }
+.home-inner{ width:100%; max-width:1180px; margin:0 auto; text-align:center }
 .home-title{ font-size:30px; margin:0 0 8px; color:var(--ink) }
 .home-sub{ color:var(--ink-soft); margin:0 0 30px; font-size:14px }
-.track-row{ display:flex; gap:16px; justify-content:center; flex-wrap:nowrap; overflow-x:auto; padding:6px 2px 14px }
+.track-row{ display:flex; gap:16px; justify-content:safe center; flex-wrap:nowrap; overflow-x:auto; padding:10px 2px 18px }
 .vcard{ flex:0 0 172px; width:172px; background:#fff; border:1px solid var(--line); border-radius:16px;
   overflow:hidden; text-decoration:none; color:var(--ink); box-shadow:var(--shadow);
   transition:transform .12s, border-color .12s }
