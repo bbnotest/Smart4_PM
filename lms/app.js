@@ -1,19 +1,17 @@
 /* ============================================================
    app.js — LMS 동작 로직 (의존: curriculum.js, marked, mermaid, highlight.js)
+   - 상단 "학습 선택" 드롭다운으로 트랙(툴) 선택
+   - 왼쪽 사이드바는 현재 트랙의 학습 단계만 표시
    - .md 를 fetch 해서 렌더 (Markdown→HTML, Mermaid, 코드 하이라이트)
-   - 상대 링크/이미지 경로를 문서 위치 기준으로 보정
-   - 진도/실습 체크리스트를 localStorage 에 저장
-   - 검색 / 이전·다음 / 대시보드 / 테마
+   - 진도/테마 기능 없음 (라이트 전용)
    ============================================================ */
 (function () {
   "use strict";
 
   const $  = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
-  const LS = window.localStorage;
   const C  = window.CURRICULUM;
 
-  // 모든 강의를 평탄화 (이전/다음, 검색, 진도 계산용)
   const FLAT = [];
   C.sections.forEach(sec => sec.items.forEach(it => FLAT.push(Object.assign({ section: sec.title }, it))));
 
@@ -38,83 +36,54 @@
   function slug(t) {
     return String(t).trim().toLowerCase().replace(/[^\w가-힣]+/g, "-").replace(/^-+|-+$/g, "");
   }
+  function sectionOf(path) { return C.sections.find(sec => sec.items.some(it => it.path === path)); }
 
-  /* ---------------- 진도(localStorage) ---------------- */
-  const doneKey = p => "lms:done:" + p;
-  const taskKey = (p, i) => "lms:task:" + p + "#" + i;
-  const isDone = p => LS.getItem(doneKey(p)) === "1";
-  function setDone(p, v) {
-    if (v) LS.setItem(doneKey(p), "1"); else LS.removeItem(doneKey(p));
-    refreshProgressUI();
-  }
-  function progressPct() {
-    const done = FLAT.filter(i => isDone(i.path)).length;
-    return FLAT.length ? Math.round((done / FLAT.length) * 100) : 0;
-  }
-  function refreshProgressUI() {
-    const pct = progressPct();
-    const fill = $("#topProgressFill"), txt = $("#topProgressPct");
-    if (fill) fill.style.width = pct + "%";
-    if (txt) txt.textContent = pct + "%";
-    $$(".nav-item").forEach(a => a.classList.toggle("done", isDone(a.dataset.path)));
-    const hero = $("#heroFill"), heroT = $("#heroPctTxt");
-    if (hero) hero.style.width = pct + "%";
-    if (heroT) heroT.textContent = pct + "% 완료 (" + FLAT.filter(i => isDone(i.path)).length + "/" + FLAT.length + " 문서)";
-    $$(".day-card .mini span").forEach(sp => {
-      const m = sp.closest(".day-card").dataset.match;
-      const items = FLAT.filter(i => i.path.indexOf(m) === 0);
-      const d = items.filter(i => isDone(i.path)).length;
-      sp.style.width = (items.length ? (d / items.length) * 100 : 0) + "%";
-    });
-    $$(".deliverables a").forEach(a => {
-      const dn = $(".dn", a);
-      if (dn) dn.style.visibility = isDone(a.dataset.path) ? "visible" : "hidden";
-    });
-  }
-
-  /* ---------------- 사이드바 ---------------- */
-  function buildSidebar() {
-    const tree = $("#navTree");
-    tree.innerHTML = "";
+  /* ---------------- 상단 "학습 선택" 드롭다운 ---------------- */
+  function buildTrackMenu() {
+    const menu = $("#trackMenu");
+    let html = '<a href="#/" class="tm-item tm-home">🏠 대시보드</a>';
     C.sections.forEach(sec => {
-      const box = document.createElement("div");
-      box.className = "nav-section";
-      const h = document.createElement("div");
-      h.className = "sec-title";
-      h.innerHTML = "<span>" + escapeHtml(sec.title) + "</span>" + (sec.badge ? '<span class="badge">' + escapeHtml(sec.badge) + "</span>" : "");
-      box.appendChild(h);
-      sec.items.forEach(it => {
-        const a = document.createElement("a");
-        a.className = "nav-item";
-        a.href = "#/" + it.path;
-        a.dataset.path = it.path;
-        a.dataset.title = it.title;
-        const typeLabel = it.type === "practice" ? '<span class="type practice">연습</span>'
-                         : it.type === "guide" ? '<span class="type">가이드</span>'
-                         : it.type === "step" ? '<span class="type">단계</span>' : "";
-        a.innerHTML = '<span class="tick">✓</span><span class="nm">' + escapeHtml(it.title) + "</span>" + typeLabel;
-        a.addEventListener("click", () => closeSidebar());
-        box.appendChild(a);
-      });
-      tree.appendChild(box);
+      const first = sec.items[0];
+      if (!first) return;
+      html += '<a href="#/' + first.path + '" class="tm-item" data-sec="' + sec.id + '">' + escapeHtml(sec.title) + "</a>";
     });
-    refreshProgressUI();
+    menu.innerHTML = html;
+    $$(".tm-item", menu).forEach(a => a.addEventListener("click", closeMenu));
   }
-  function setActive(path) {
-    $$(".nav-item").forEach(a => a.classList.toggle("active", a.dataset.path === path));
+  function toggleMenu() { const m = $("#trackMenu"); m.hidden = !m.hidden; }
+  function closeMenu() { const m = $("#trackMenu"); if (m) m.hidden = true; }
+
+  /* ---------------- 사이드바 (현재 트랙의 단계만) ---------------- */
+  function renderSidebar(path) {
+    const tree = $("#navTree");
+    const titleEl = $("#sideTitle");
+    const sec = path ? sectionOf(path) : null;
+    if (!sec) {
+      if (titleEl) titleEl.textContent = "";
+      tree.innerHTML = '<div class="side-hint">상단의 <b>학습 선택 ▾</b> 에서<br>학습할 툴을 골라주세요.</div>';
+      return;
+    }
+    if (titleEl) titleEl.textContent = sec.title.replace(/^[^\w가-힣]+/, "").trim() + " · 학습 단계";
+    tree.innerHTML = sec.items.map(it => {
+      const tag = it.type === "practice" ? '<span class="type practice">연습</span>'
+                : it.type === "guide" ? '<span class="type">개요</span>' : "";
+      return '<a class="nav-item' + (it.path === path ? " active" : "") + '" href="#/' + it.path + '" data-path="' + it.path + '" data-title="' + escapeHtml(it.title) + '">' +
+             '<span class="nm">' + escapeHtml(it.title) + "</span>" + tag + "</a>";
+    }).join("");
+    $$(".nav-item", tree).forEach(a => a.addEventListener("click", closeSidebar));
   }
 
   /* ---------------- 라우팅 ---------------- */
   function currentPath() {
     const h = location.hash;
-    if (!h.startsWith("#/")) return null;        // 본문 내 앵커(#xxx)나 빈 해시는 라우트 아님
+    if (!h.startsWith("#/")) return null;
     return decodeURIComponent(h.slice(2));
   }
   async function route() {
     const p = currentPath();
     if (p === null) {
       if (location.hash === "" || location.hash === "#") renderDashboard();
-      return; // 본문 앵커는 브라우저가 처리
+      return;
     }
     if (p === "") { renderDashboard(); return; }
     await loadDoc(p);
@@ -122,7 +91,7 @@
 
   /* ---------------- 문서 로드/렌더 ---------------- */
   async function loadDoc(path) {
-    setActive(path);
+    renderSidebar(path);
     contentEl.innerHTML = '<div class="loading">⏳ 불러오는 중…</div>';
     let md;
     try {
@@ -138,8 +107,7 @@
       contentEl.innerHTML = '<article class="doc"><pre>' + escapeHtml(md) + "</pre></article>";
       return;
     }
-    const html = marked.parse(md);
-    contentEl.innerHTML = '<article class="doc">' + html + "</article>";
+    contentEl.innerHTML = '<article class="doc">' + marked.parse(md) + "</article>";
     const article = $(".doc", contentEl);
     postProcess(article, path);
     renderDocFooter(path);
@@ -157,8 +125,7 @@
         "<li>또는 VS Code <b>Live Server</b> 확장 사용</li></ol>";
     } else {
       body = "<p>파일을 불러오지 못했습니다: <code>" + escapeHtml(path) + "</code></p>" +
-        "<p>오류: <code>" + escapeHtml(e.message || String(e)) + "</code></p>" +
-        "<p>파일이 존재하는지, 경로가 맞는지 확인하세요.</p>";
+        "<p>오류: <code>" + escapeHtml(e.message || String(e)) + "</code></p>";
     }
     return '<div class="error"><h2>⚠️ 콘텐츠를 표시할 수 없습니다</h2>' + body + "</div>";
   }
@@ -166,21 +133,21 @@
   function postProcess(article, path) {
     const base = dirOf(path);
 
-    // 1) Mermaid: <code.language-mermaid> → <div.mermaid>
+    // 1) Mermaid
     const mNodes = [];
     $$("code.language-mermaid", article).forEach(code => {
       const div = document.createElement("div");
       div.className = "mermaid";
-      div.textContent = code.textContent;       // 원본 소스(<br/> 리터럴 유지)
+      div.textContent = code.textContent;
       const pre = code.closest("pre") || code;
       pre.replaceWith(div);
       mNodes.push(div);
     });
     if (mNodes.length && typeof mermaid !== "undefined") {
-      try { mermaid.run({ nodes: mNodes }); } catch (e) { /* noop */ }
+      try { mermaid.run({ nodes: mNodes }); } catch (e) {}
     }
 
-    // 2) 코드 하이라이트 (mermaid 제외)
+    // 2) 코드 하이라이트
     if (typeof hljs !== "undefined") {
       $$("pre code", article).forEach(c => {
         if (!c.classList.contains("language-mermaid")) { try { hljs.highlightElement(c); } catch (e) {} }
@@ -193,11 +160,11 @@
       if (!/^(https?:|data:)/i.test(src)) img.setAttribute("src", resolvePath(base, src));
     });
 
-    // 4) 링크: 내부 .md/폴더 → 앱 라우트, 외부 → 새 탭
+    // 4) 링크 보정
     $$("a", article).forEach(a => {
       const href = a.getAttribute("href") || "";
       if (/^(https?:|mailto:)/i.test(href)) { a.target = "_blank"; a.rel = "noopener"; return; }
-      if (href.startsWith("#")) return;                 // 본문 내 앵커
+      if (href.startsWith("#")) return;
       const clean = href.replace(/[#?].*$/, "");
       const resolved = resolvePath(base, clean);
       if (/\.md$/i.test(resolved)) {
@@ -210,101 +177,61 @@
       }
     });
 
-    // 5) 제목 id (앵커 이동용)
+    // 5) 제목 id
     $$("h1,h2,h3", article).forEach(h => { if (!h.id) h.id = slug(h.textContent); });
 
-    // 6) 실습 체크리스트: 활성화 + 저장
-    const boxes = $$("li.task-list-item input[type=checkbox], li input[type=checkbox]", article);
-    boxes.forEach((box, idx) => {
+    // 6) 체크리스트: 클릭 가능 (저장하지 않음 — 진도 기능 없음)
+    $$("li input[type=checkbox]", article).forEach(box => {
       box.disabled = false;
       const li = box.closest("li");
       if (li) li.classList.add("task-list-item");
-      if (LS.getItem(taskKey(path, idx)) === "1") { box.checked = true; if (li) li.classList.add("checked"); }
-      box.addEventListener("change", () => {
-        if (box.checked) LS.setItem(taskKey(path, idx), "1"); else LS.removeItem(taskKey(path, idx));
-        if (li) li.classList.toggle("checked", box.checked);
-        maybeAutoComplete(path, boxes);
-      });
+      box.addEventListener("change", () => { if (li) li.classList.toggle("checked", box.checked); });
     });
   }
 
-  function maybeAutoComplete(path, boxes) {
-    if (boxes.length && boxes.every(b => b.checked) && !isDone(path)) {
-      setDone(path, true);
-      const btn = $("#completeBtn");
-      if (btn) markBtn(btn, true);
-    }
-  }
-
-  /* ---------------- 문서 푸터(완료/이전·다음) ---------------- */
-  function markBtn(btn, done) {
-    btn.classList.toggle("is-done", done);
-    btn.textContent = done ? "✓ 완료함 (클릭하여 취소)" : "○ 이 강의 완료 표시";
-  }
+  /* ---------------- 문서 푸터(이전·다음, 현재 트랙 내) ---------------- */
   function renderDocFooter(path) {
-    const idx = FLAT.findIndex(i => i.path === path);
-    const prev = idx > 0 ? FLAT[idx - 1] : null;
-    const next = idx >= 0 && idx < FLAT.length - 1 ? FLAT[idx + 1] : null;
-
+    const sec = sectionOf(path);
+    let prev = null, next = null;
+    if (sec) {
+      const idx = sec.items.findIndex(it => it.path === path);
+      if (idx > 0) prev = sec.items[idx - 1];
+      if (idx >= 0 && idx < sec.items.length - 1) next = sec.items[idx + 1];
+    }
     const foot = document.createElement("div");
     foot.className = "doc-footer";
-    const btn = document.createElement("button");
-    btn.id = "completeBtn";
-    btn.className = "complete-btn";
-    markBtn(btn, isDone(path));
-    btn.addEventListener("click", () => { const v = !isDone(path); setDone(path, v); markBtn(btn, v); });
-    foot.appendChild(btn);
-
-    const nav = document.createElement("div");
-    nav.className = "nav-btns";
-    nav.innerHTML =
-      '<a class="' + (prev ? "" : "disabled") + '" href="' + (prev ? "#/" + prev.path : "#") + '">← ' + (prev ? escapeHtml(prev.title) : "이전") + "</a>" +
-      '<a class="' + (next ? "" : "disabled") + '" href="' + (next ? "#/" + next.path : "#") + '">' + (next ? escapeHtml(next.title) : "다음") + " →</a>";
-    foot.appendChild(nav);
+    foot.innerHTML =
+      '<a class="navbtn ' + (prev ? "" : "disabled") + '" href="' + (prev ? "#/" + prev.path : "#") + '">← ' + (prev ? escapeHtml(prev.title) : "이전") + "</a>" +
+      '<a class="navbtn ' + (next ? "" : "disabled") + '" href="' + (next ? "#/" + next.path : "#") + '">' + (next ? escapeHtml(next.title) : "이 트랙의 마지막") + " →</a>";
     contentEl.appendChild(foot);
   }
 
-  /* ---------------- 대시보드 ---------------- */
+  /* ---------------- 대시보드 (트랙 선택 카드) ---------------- */
   function renderDashboard() {
-    setActive("__home__");
-    const dayCards = C.cards.map(d =>
-      '<a class="day-card" data-match="' + d.match + '" href="#/' + d.go + '">' +
+    renderSidebar(null);
+    const cards = C.cards.map(d =>
+      '<a class="track-card" href="#/' + d.go + '">' +
         '<span class="t">' + escapeHtml(d.label) + "</span>" +
         '<span class="s">' + escapeHtml(d.sub) + "</span>" +
-        '<span class="mini"><span></span></span>' +
       "</a>").join("");
-
-    const delItems = FLAT.filter(i => i.deliverable).map(i =>
-      '<a data-path="' + i.path + '" href="#/' + i.path + '">' +
-        '<span class="dot"></span>' + escapeHtml(i.deliverable) +
-        ' <span style="color:var(--ink-soft);font-size:11px;margin-left:6px">(' + escapeHtml(i.title) + ")</span>" +
-        '<span class="dn">✓ 완료</span>' +
-      "</a>").join("");
-
     contentEl.innerHTML =
       '<div class="dash">' +
         '<div class="hero">' +
           "<h1>🎮 " + escapeHtml(C.title) + "</h1>" +
-          "<p>" + escapeHtml(C.subtitle) + " · PM 기초부터, 팀으로 따라 하며 익히는 실습 가이드</p>" +
-          '<div class="hero-prog"><div class="bar"><span id="heroFill"></span></div><small id="heroPctTxt"></small></div>' +
+          "<p>" + escapeHtml(C.subtitle) + " · 어느 회사가 무슨 툴을 쓰든 \"써봤습니다\"라고 말할 수 있게.</p>" +
         "</div>" +
-        '<div class="section-h">🎯 무엇을 배울까요? — 트랙을 고르세요</div>' +
-        '<div class="day-grid">' + dayCards + "</div>" +
+        '<div class="section-h">무엇을 배울까요? — 트랙을 고르세요</div>' +
+        '<div class="track-grid">' + cards + "</div>" +
+        '<p class="dash-tip">상단 <b>학습 선택 ▾</b> 메뉴로도 언제든 트랙을 바꿀 수 있어요.</p>' +
       "</div>";
-    refreshProgressUI();
   }
 
   /* ---------------- 검색 ---------------- */
   function filterSidebar(q) {
     const term = q.trim().toLowerCase();
-    $$(".nav-section").forEach(sec => {
-      let any = false;
-      $$(".nav-item", sec).forEach(a => {
-        const hit = !term || a.dataset.title.toLowerCase().includes(term);
-        a.style.display = hit ? "" : "none";
-        if (hit) any = true;
-      });
-      sec.style.display = any ? "" : "none";
+    $$("#navTree .nav-item").forEach(a => {
+      const hit = !term || (a.dataset.title || "").toLowerCase().includes(term);
+      a.style.display = hit ? "" : "none";
     });
   }
   async function getText(path) {
@@ -316,7 +243,7 @@
   async function fullTextSearch(q) {
     const term = q.trim();
     if (!term) { route(); return; }
-    contentEl.innerHTML = '<div class="loading">🔎 “' + escapeHtml(term) + '” 전체 검색 중…</div>';
+    contentEl.innerHTML = '<div class="loading">🔎 “' + escapeHtml(term) + '” 검색 중…</div>';
     await Promise.all(FLAT.map(i => getText(i.path)));
     const low = term.toLowerCase();
     const hits = [];
@@ -330,29 +257,12 @@
         hits.push({ i, snip });
       }
     });
+    renderSidebar(null);
     contentEl.innerHTML =
       '<div class="doc search-results"><h2>🔎 검색 결과: “' + escapeHtml(term) + "” (" + hits.length + "건)</h2>" +
       (hits.length ? hits.map(h =>
         '<a class="hit" href="#/' + h.i.path + '"><b>' + escapeHtml(h.i.title) + "</b> <small>" + escapeHtml(h.i.section) + "</small><small>…" + h.snip + "…</small></a>"
       ).join("") : "<p>일치하는 내용이 없습니다.</p>") + "</div>";
-  }
-
-  /* ---------------- 테마 ---------------- */
-  function applyTheme(t) {
-    document.documentElement.dataset.theme = t;
-    const lit = $("#hljs-light"), dk = $("#hljs-dark");
-    if (lit) lit.disabled = t === "dark";
-    if (dk) dk.disabled = t !== "dark";
-    const btn = $("#themeBtn"); if (btn) btn.textContent = t === "dark" ? "☀️" : "🌙";
-    if (typeof mermaid !== "undefined") {
-      try { mermaid.initialize({ startOnLoad: false, theme: t === "dark" ? "dark" : "default", securityLevel: "loose", flowchart: { htmlLabels: true } }); } catch (e) {}
-    }
-    LS.setItem("lms:theme", t);
-  }
-  function toggleTheme() {
-    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    applyTheme(next);
-    if (currentPath()) route();   // 열린 문서가 있으면 Mermaid 재렌더 위해 새로고침
   }
 
   /* ---------------- 모바일 사이드바 ---------------- */
@@ -362,24 +272,20 @@
   /* ---------------- 초기화 ---------------- */
   function init() {
     document.title = C.title + " · LMS";
-    const bt = $("#brandTitle"), bs = $("#brandSub");
-    if (bt) bt.textContent = C.title;
-    if (bs) bs.textContent = C.subtitle;
+    const bt = $("#brandTitle"); if (bt) bt.textContent = C.title;
 
-    const saved = LS.getItem("lms:theme") || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    applyTheme(saved);
+    if (typeof mermaid !== "undefined") {
+      try { mermaid.initialize({ startOnLoad: false, theme: "default", securityLevel: "loose", flowchart: { htmlLabels: true } }); } catch (e) {}
+    }
 
-    buildSidebar();
+    buildTrackMenu();
 
-    $("#themeBtn").addEventListener("click", toggleTheme);
+    $("#trackBtn").addEventListener("click", e => { e.stopPropagation(); toggleMenu(); });
+    document.addEventListener("click", e => { if (!e.target.closest(".track-wrap")) closeMenu(); });
+
     $("#menuBtn").addEventListener("click", () => ($("#sidebar").classList.contains("open") ? closeSidebar() : openSidebar()));
     $("#backdrop").addEventListener("click", closeSidebar);
-    $("#resetBtn").addEventListener("click", () => {
-      if (confirm("모든 진도와 실습 체크 기록을 지울까요? (되돌릴 수 없습니다)")) {
-        Object.keys(LS).filter(k => k.startsWith("lms:done:") || k.startsWith("lms:task:")).forEach(k => LS.removeItem(k));
-        refreshProgressUI(); route();
-      }
-    });
+
     const si = $("#searchInput");
     si.addEventListener("input", e => filterSidebar(e.target.value));
     si.addEventListener("keydown", e => { if (e.key === "Enter") fullTextSearch(e.target.value); });
