@@ -63,6 +63,25 @@ button{font-family:inherit}
 .icon-btn:hover{border-color:var(--brand)}
 #menuBtn{display:none}
 
+/* ---------- 대시보드(홈) = 타이틀 화면: 상단·좌측 메뉴 숨김 ---------- */
+body[data-view="home"] .topbar,
+body[data-view="home"] .sidebar,
+body[data-view="home"] .backdrop{ display:none !important; }
+body[data-view="home"] .main{ padding:0 }
+.home{ width:100%; min-height:100vh; display:flex; align-items:center; justify-content:center;
+  padding:30px 16px; background:linear-gradient(135deg,#eaf1fc,#f4f1ff); }
+.home-inner{ width:100%; max-width:1180px; text-align:center }
+.home-title{ font-size:30px; margin:0 0 8px; color:var(--ink) }
+.home-sub{ color:var(--ink-soft); margin:0 0 30px; font-size:14px }
+.track-row{ display:flex; gap:16px; justify-content:center; flex-wrap:nowrap; overflow-x:auto; padding:6px 2px 14px }
+.vcard{ flex:0 0 172px; width:172px; background:#fff; border:1px solid var(--line); border-radius:16px;
+  overflow:hidden; text-decoration:none; color:var(--ink); box-shadow:var(--shadow);
+  transition:transform .12s, border-color .12s }
+.vcard:hover{ transform:translateY(-5px); border-color:var(--brand) }
+.vcard .cover{ display:block; width:100%; height:108px; object-fit:cover }
+.vcard .vc-name{ font-size:17px; font-weight:800; padding:13px 14px 2px }
+.vcard .vc-desc{ font-size:12px; color:var(--ink-soft); padding:0 14px 16px; line-height:1.5 }
+
 /* ---------- 레이아웃 ---------- */
 .layout{display:flex; min-height:calc(100vh - 56px)}
 .sidebar{
@@ -148,25 +167,7 @@ button{font-family:inherit}
 .doc-footer .navbtn:hover{border-color:var(--brand); color:var(--brand)}
 .doc-footer .navbtn.disabled{opacity:.4; pointer-events:none}
 
-/* ---------- 대시보드 ---------- */
-.dash{width:100%; max-width:980px}
-.hero{
-  background:linear-gradient(135deg,var(--brand),#5b46c9); color:#fff; border-radius:16px;
-  padding:30px 32px; box-shadow:var(--shadow);
-}
-.hero h1{margin:0 0 8px; font-size:24px}
-.hero p{margin:0; opacity:.94; font-size:14px}
-.section-h{font-size:15px; font-weight:700; margin:26px 4px 12px; color:var(--ink)}
-.track-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px}
-.track-card{
-  background:var(--chrome); border:1px solid var(--line); border-radius:14px; padding:18px 16px; cursor:pointer;
-  text-decoration:none; color:var(--ink); display:flex; flex-direction:column; gap:6px; box-shadow:var(--shadow);
-  transition:transform .12s, border-color .12s;
-}
-.track-card:hover{transform:translateY(-2px); border-color:var(--brand)}
-.track-card .t{font-size:17px; font-weight:800}
-.track-card .s{font-size:12.5px; color:var(--ink-soft)}
-.dash-tip{margin:18px 4px 0; font-size:12.5px; color:var(--ink-soft)}
+/* (대시보드 홈 스타일은 위 "대시보드(홈)" 섹션 참고) */
 
 /* ---------- 검색 결과 / 상태 ---------- */
 .loading,.error{padding:40px; text-align:center; color:var(--ink-soft)}

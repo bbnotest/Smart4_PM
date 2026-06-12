@@ -48,10 +48,7 @@
       html += '<a href="#/' + first.path + '" class="tm-item" data-sec="' + sec.id + '">' + escapeHtml(sec.title) + "</a>";
     });
     menu.innerHTML = html;
-    $$(".tm-item", menu).forEach(a => a.addEventListener("click", closeMenu));
   }
-  function toggleMenu() { const m = $("#trackMenu"); m.hidden = !m.hidden; }
-  function closeMenu() { const m = $("#trackMenu"); if (m) m.hidden = true; }
 
   /* ---------------- 사이드바 (현재 트랙의 단계만) ---------------- */
   function renderSidebar(path) {
@@ -91,6 +88,7 @@
 
   /* ---------------- 문서 로드/렌더 ---------------- */
   async function loadDoc(path) {
+    document.body.dataset.view = "doc";
     renderSidebar(path);
     contentEl.innerHTML = '<div class="loading">⏳ 불러오는 중…</div>';
     let md;
@@ -208,22 +206,20 @@
 
   /* ---------------- 대시보드 (트랙 선택 카드) ---------------- */
   function renderDashboard() {
+    document.body.dataset.view = "home";
     renderSidebar(null);
     const cards = C.cards.map(d =>
-      '<a class="track-card" href="#/' + d.go + '">' +
-        '<span class="t">' + escapeHtml(d.label) + "</span>" +
-        '<span class="s">' + escapeHtml(d.sub) + "</span>" +
+      '<a class="vcard" href="#/' + d.go + '">' +
+        '<img class="cover" src="' + d.cover + '" alt="" />' +
+        '<div class="vc-name">' + escapeHtml(d.label) + "</div>" +
+        '<div class="vc-desc">' + escapeHtml(d.sub) + "</div>" +
       "</a>").join("");
     contentEl.innerHTML =
-      '<div class="dash">' +
-        '<div class="hero">' +
-          "<h1>🎮 " + escapeHtml(C.title) + "</h1>" +
-          "<p>" + escapeHtml(C.subtitle) + " · 어느 회사가 무슨 툴을 쓰든 \"써봤습니다\"라고 말할 수 있게.</p>" +
-        "</div>" +
-        '<div class="section-h">무엇을 배울까요? — 트랙을 고르세요</div>' +
-        '<div class="track-grid">' + cards + "</div>" +
-        '<p class="dash-tip">상단 <b>학습 선택 ▾</b> 메뉴로도 언제든 트랙을 바꿀 수 있어요.</p>' +
-      "</div>";
+      '<div class="home"><div class="home-inner">' +
+        '<h1 class="home-title">🎮 ' + escapeHtml(C.title) + "</h1>" +
+        '<p class="home-sub">' + escapeHtml(C.subtitle) + " · 어느 회사가 무슨 툴을 쓰든 자신 있게.</p>" +
+        '<div class="track-row">' + cards + "</div>" +
+      "</div></div>";
   }
 
   /* ---------------- 검색 ---------------- */
@@ -243,6 +239,7 @@
   async function fullTextSearch(q) {
     const term = q.trim();
     if (!term) { route(); return; }
+    document.body.dataset.view = "doc";
     contentEl.innerHTML = '<div class="loading">🔎 “' + escapeHtml(term) + '” 검색 중…</div>';
     await Promise.all(FLAT.map(i => getText(i.path)));
     const low = term.toLowerCase();
@@ -280,8 +277,12 @@
 
     buildTrackMenu();
 
-    $("#trackBtn").addEventListener("click", e => { e.stopPropagation(); toggleMenu(); });
-    document.addEventListener("click", e => { if (!e.target.closest(".track-wrap")) closeMenu(); });
+    const trackMenu = $("#trackMenu");
+    $("#trackBtn").addEventListener("click", () => { trackMenu.hidden = !trackMenu.hidden; });
+    document.addEventListener("click", e => {
+      if (trackMenu.hidden || e.target.closest("#trackBtn")) return;
+      trackMenu.hidden = true;   // 메뉴 항목·바깥 어디를 눌러도 닫힘
+    });
 
     $("#menuBtn").addEventListener("click", () => ($("#sidebar").classList.contains("open") ? closeSidebar() : openSidebar()));
     $("#backdrop").addEventListener("click", closeSidebar);

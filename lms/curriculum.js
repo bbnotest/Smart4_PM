@@ -97,13 +97,13 @@ window.CURRICULUM = {
     }
   ],
 
-  /* 랜딩(대시보드)의 트랙 선택 카드 (match = 진행률 계산용 경로 접두사) */
+  /* 대시보드 세로 카드 (커버 이미지 + 이름 + 설명) */
   cards: [
-    { label: "📚 PM 기초", sub: "PM의 일 · 기본 용어", go: "00_PM_Basics/Guide.md", match: "00_PM_Basics/" },
-    { label: "Jira",      sub: "업계표준 애자일/스크럼", go: "02_Jira/Guide.md",      match: "02_Jira/" },
-    { label: "Asana",     sub: "직관적 작업·일정 관리",  go: "03_Asana/Guide.md",     match: "03_Asana/" },
-    { label: "Trello",    sub: "가장 쉬운 칸반",        go: "01_Trello/Guide.md",    match: "01_Trello/" },
-    { label: "Redmine",   sub: "오픈소스 · 내장 간트",   go: "04_Redmine/Guide.md",   match: "04_Redmine/" },
-    { label: "🏁 마무리",  sub: "상황에 맞는 툴 고르기",  go: "05_Capstone/Capstone.md", match: "05_Capstone/" }
+    { label: "PM 기초", sub: "PM의 일 · 기본 용어",   cover: "assets/cover_pm.svg",      go: "00_PM_Basics/Guide.md",   match: "00_PM_Basics/" },
+    { label: "Jira",    sub: "업계표준 애자일/스크럼", cover: "assets/cover_jira.svg",    go: "02_Jira/Guide.md",        match: "02_Jira/" },
+    { label: "Asana",   sub: "직관적 작업·일정 관리",  cover: "assets/cover_asana.svg",   go: "03_Asana/Guide.md",       match: "03_Asana/" },
+    { label: "Trello",  sub: "가장 쉬운 칸반",         cover: "assets/cover_trello.svg",  go: "01_Trello/Guide.md",      match: "01_Trello/" },
+    { label: "Redmine", sub: "오픈소스 · 내장 간트",   cover: "assets/cover_redmine.svg", go: "04_Redmine/Guide.md",     match: "04_Redmine/" },
+    { label: "마무리",  sub: "상황에 맞는 툴 고르기",  cover: "assets/cover_wrap.svg",    go: "05_Capstone/Capstone.md", match: "05_Capstone/" }
   ]
 };
