@@ -76,14 +76,17 @@ window.CURRICULUM = {
       title: "Redmine",
       badge: "Gantt",
       items: [
-        { path: "04_Redmine/Guide.md",    title: "Redmine 개요",            type: "guide" },
-        { path: "04_Redmine/Step1.md",    title: "1단계 · Redmine 띄우기",   type: "step" },
-        { path: "04_Redmine/Step2.md",    title: "2단계 · 관리자 & 프로젝트", type: "step" },
-        { path: "04_Redmine/Step3.md",    title: "3단계 · 이슈와 WBS",      type: "step" },
-        { path: "04_Redmine/Step4.md",    title: "4단계 · 버전(마일스톤)",   type: "step" },
-        { path: "04_Redmine/Step5.md",    title: "5단계 · 내장 간트",        type: "step" },
-        { path: "04_Redmine/Step6.md",    title: "6단계 · 시간기록 & 마무리", type: "step" },
-        { path: "04_Redmine/Practice.md", title: "Redmine 직접 해보기",   type: "practice", deliverable: "프로젝트 + 내장 Gantt" }
+        { path: "04_Redmine/Guide.md",    title: "Redmine 개요",              type: "guide" },
+        { path: "04_Redmine/Step1.md",    title: "1단계 · Redmine 띄우기",     type: "step", group: "🟢 기초 단계" },
+        { path: "04_Redmine/Step2.md",    title: "2단계 · 관리자 & 프로젝트",   type: "step", group: "🟢 기초 단계" },
+        { path: "04_Redmine/Step3.md",    title: "3단계 · 이슈 다루기",        type: "step", group: "🟢 기초 단계" },
+        { path: "04_Redmine/Step4.md",    title: "4단계 · 상위/하위 WBS",      type: "step", group: "🔵 실무 단계" },
+        { path: "04_Redmine/Step5.md",    title: "5단계 · 버전 & 로드맵",      type: "step", group: "🔵 실무 단계" },
+        { path: "04_Redmine/Step6.md",    title: "6단계 · 내장 간트",          type: "step", group: "🔵 실무 단계" },
+        { path: "04_Redmine/Step7.md",    title: "7단계 · 사용자 정의 쿼리",    type: "step", group: "🟣 응용 단계" },
+        { path: "04_Redmine/Step8.md",    title: "8단계 · 시간 추적 & 관계",    type: "step", group: "🟣 응용 단계" },
+        { path: "04_Redmine/Step9.md",    title: "9단계 · 위키·소식 & 마무리",  type: "step", group: "🟣 응용 단계" },
+        { path: "04_Redmine/Practice.md", title: "Redmine 직접 해보기",     type: "practice", deliverable: "프로젝트 + 내장 Gantt" }
       ]
     },
     {
