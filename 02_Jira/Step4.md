@@ -45,8 +45,9 @@ graph LR
     A["할 일"] --> B["진행 중"] --> C["검토 중"] --> D["완료"]
 ```
 
-> 🖼️ 공식 스크린샷 자리 — 스프린트 시작 / 보드
-> 출처: https://support.atlassian.com/jira-software-cloud/docs/enable-sprints/
+![Jira 스프린트 보드 화면](../assets/jira_step4_board.svg)
+
+> 📷 실제 보드 화면을 본떠 만든 안내 그림 · 공식 문서: https://support.atlassian.com/jira-software-cloud/docs/enable-sprints/
 
 ---
 

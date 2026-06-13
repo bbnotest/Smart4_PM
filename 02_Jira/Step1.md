@@ -45,8 +45,9 @@
 > - **`회사가 관리`(Company-managed)를 고르면 메뉴가 완전히 달라집니다.** 꼭 **`팀이 관리`** 로.
 > - 신규 가입 사이트는 위처럼 **4단계 마법사**입니다(예전엔 이름+Key 한 번으로 끝). 기본값으로 **다음→완료** 하면 됩니다.
 
-> 🖼️ 공식 스크린샷 자리 — 스크럼 프로젝트 생성
-> 출처: https://www.atlassian.com/software/jira/templates/scrum
+![Jira 스크럼 프로젝트 생성 화면](../assets/jira_step1_create.svg)
+
+> 📷 실제 생성 화면을 본떠 만든 안내 그림 · 공식 문서: https://www.atlassian.com/software/jira/templates/scrum
 
 ---
 

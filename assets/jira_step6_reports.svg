@@ -1,0 +1,68 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <rect width="900" height="560" fill="#F4F5F7"/>
+  <text x="30" y="30" font-size="13" fill="#5E6C84">Jira · 6단계 — 보고서 → 더 많은 보고서 (실제 화면 재현)</text>
+
+  <rect x="30" y="46" width="840" height="436" rx="10" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <text x="55" y="86" font-size="20" font-weight="700" fill="#172B4D">더 많은 보고서</text>
+  <text x="842" y="84" font-size="20" fill="#7A869A" text-anchor="end">×</text>
+
+  <!-- card 1: 번업 -->
+  <rect x="55" y="104" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <rect x="71" y="120" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <polyline points="80,188 120,170 160,150 210,135 280,122" fill="none" stroke="#FF7452" stroke-width="2.5"/>
+  <polyline points="80,190 130,182 180,168 230,150 280,140" fill="none" stroke="#6554C0" stroke-width="2.5"/>
+  <text x="71" y="226" font-size="14" font-weight="700" fill="#172B4D">번업 보고서</text>
+  <text x="71" y="247" font-size="11.5" fill="#5E6C84">완료 작업을 전체 범위와 비교해</text>
+  <text x="71" y="263" font-size="11.5" fill="#5E6C84">진행 상황을 추적합니다.</text>
+
+  <!-- card 2: 번다운 (HIGHLIGHT) -->
+  <rect x="325" y="104" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#0C66E4" stroke-width="2.5"/>
+  <rect x="341" y="120" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <line x1="350" y1="126" x2="550" y2="190" stroke="#B3BAC5" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polyline points="350,126 388,126 388,142 430,142 430,160 480,160 480,174 525,174 525,188 552,188" fill="none" stroke="#FF5630" stroke-width="2.5"/>
+  <text x="341" y="226" font-size="14" font-weight="700" fill="#172B4D">스프린트 번다운 차트</text>
+  <text x="341" y="247" font-size="11.5" fill="#5E6C84">스프린트에 남은 작업을 추적합니다.</text>
+  <text x="341" y="263" font-size="11.5" fill="#5E6C84">평평하면 = 일이 안 줄고 있다(위험!)</text>
+  <rect x="476" y="92" width="100" height="24" rx="12" fill="#0C66E4"/>
+  <text x="526" y="108" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">여기! 번다운</text>
+
+  <!-- card 3: 속도 -->
+  <rect x="595" y="104" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <rect x="611" y="120" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <rect x="628" y="160" width="20" height="32" fill="#8FB8F6"/>
+  <rect x="660" y="146" width="20" height="46" fill="#8FB8F6"/>
+  <rect x="692" y="154" width="20" height="38" fill="#8FB8F6"/>
+  <rect x="724" y="138" width="20" height="54" fill="#8FB8F6"/>
+  <rect x="756" y="150" width="20" height="42" fill="#36B37E"/>
+  <text x="611" y="226" font-size="14" font-weight="700" fill="#172B4D">속도 보고서 (Velocity)</text>
+  <text x="611" y="247" font-size="11.5" fill="#5E6C84">스프린트마다 끝낸 포인트로 다음</text>
+  <text x="611" y="263" font-size="11.5" fill="#5E6C84">용량을 예측합니다.</text>
+
+  <!-- row 2 (faded extras) -->
+  <rect x="55" y="290" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <rect x="71" y="306" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <path d="M80 376 L130 360 L180 366 L240 340 L280 348 L280 380 L80 380 Z" fill="#C0B6F2"/>
+  <path d="M80 380 L130 372 L180 374 L240 360 L280 366 L280 380 L80 380 Z" fill="#79E2F2"/>
+  <text x="71" y="412" font-size="14" font-weight="700" fill="#172B4D">누적 흐름 다이어그램</text>
+  <text x="71" y="433" font-size="11.5" fill="#5E6C84">상태별 누적량으로 병목을 파악.</text>
+
+  <rect x="325" y="290" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <rect x="341" y="306" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <line x1="350" y1="338" x2="552" y2="338" stroke="#B3BAC5" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="380" cy="356" r="4" fill="#FFAB00"/><circle cx="420" cy="330" r="4" fill="#4C9AFF"/>
+  <circle cx="470" cy="346" r="4" fill="#4C9AFF"/><circle cx="510" cy="326" r="4" fill="#4C9AFF"/>
+  <text x="341" y="412" font-size="14" font-weight="700" fill="#172B4D">사이클 타임 보고서</text>
+  <text x="341" y="433" font-size="11.5" fill="#5E6C84">작업 처리에 걸린 시간을 봅니다.</text>
+
+  <rect x="595" y="290" width="250" height="164" rx="8" fill="#FFFFFF" stroke="#DFE1E6"/>
+  <rect x="611" y="306" width="218" height="76" rx="4" fill="#F7F8F9"/>
+  <rect x="628" y="350" width="18" height="26" fill="#A5ADBA"/><rect x="656" y="342" width="18" height="34" fill="#A5ADBA"/>
+  <rect x="684" y="346" width="18" height="30" fill="#A5ADBA"/><rect x="712" y="338" width="18" height="38" fill="#A5ADBA"/>
+  <rect x="740" y="332" width="18" height="44" fill="#36B37E"/>
+  <text x="611" y="412" font-size="14" font-weight="700" fill="#172B4D">배포 빈도 보고서</text>
+  <text x="611" y="433" font-size="11.5" fill="#5E6C84">배포 빈도로 위험을 파악.</text>
+
+  <!-- bottom annotation -->
+  <rect x="30" y="500" width="840" height="46" rx="8" fill="#FFF7D6" stroke="#E2C636"/>
+  <text x="48" y="528" font-size="13" fill="#42526E">경로: 상단 탭 <tspan font-weight="700" fill="#172B4D">보고서</tspan> → <tspan font-weight="700" fill="#172B4D">더 많은 보고서</tspan> → <tspan font-weight="700" fill="#172B4D">스프린트 번다운 차트</tspan>   ·   PM은 번다운으로 지연을 일찍 잡습니다.</text>
+</svg>
