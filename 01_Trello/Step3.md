@@ -33,9 +33,7 @@
 
 완성하면 이런 모습이 됩니다 👇
 
-![Trello 보드 목업](../assets/trello_board_mockup.svg)
-
-> 🖼️ 공식 스크린샷 자리 — 카드 쌓인 보드
+![Trello 카드 — Backlog에 9장](../assets/trello_step3.svg)
 
 ---
 

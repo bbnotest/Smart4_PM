@@ -28,7 +28,9 @@ graph LR
 
 > 💡 헷갈리면 `To Do / Doing / Done` 3개로 시작해도 정상입니다.
 
-> 🖼️ 공식 스크린샷 자리 — 리스트 만들기
+![Trello 리스트 — 워크플로 5단계](../assets/trello_step2.svg)
+
+> ▲ 리스트는 칸반의 **세로 줄(진행 단계)** 입니다. 왼쪽 `Backlog`에서 오른쪽 `Done`으로 흐릅니다.
 
 ---
 
