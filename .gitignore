@@ -20,3 +20,4 @@ redmine-files/
 # ---- 임시/로그 ----
 *.log
 .tmp/
+assets/_capture/
