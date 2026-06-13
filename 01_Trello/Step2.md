@@ -28,6 +28,10 @@ graph LR
 
 > 💡 헷갈리면 `To Do / Doing / Done` 3개로 시작해도 정상입니다.
 
+> 🙋 **새 보드엔 `To Do·Doing·Done`가 기본**으로 들어 있어요.<br>
+> `Doing`을 `In Progress`로 이름만 바꾸고, `Backlog`·`Review`를 새로 더하면 5개가 됩니다.<br>
+> 안 쓰는 리스트는 리스트 헤더 `···` → `리스트 보관`(Archive)으로 정리하세요.
+
 ![Trello 리스트 — 워크플로 5단계](../assets/trello_step2.svg)
 
 > ▲ 리스트는 칸반의 **세로 줄(진행 단계)** 입니다. 왼쪽 `Backlog`에서 오른쪽 `Done`으로 흐릅니다.
