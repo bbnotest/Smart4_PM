@@ -3,7 +3,7 @@
   <rect x="406" y="108" width="100" height="34" rx="8" fill="none" stroke="#DE350B" stroke-width="3"/>
   <rect x="1432" y="108" width="120" height="34" rx="8" fill="none" stroke="#36B37E" stroke-width="3"/>
   <rect x="280" y="610" width="900" height="98" rx="10" fill="#FFFFFF" fill-opacity="0.97" stroke="#E2C636" stroke-width="2"/>
-  <text x="304" y="642" font-size="18" font-weight="800" fill="#172B4D">7단계 — JQL &amp; 저장된 필터</text>
+  <text x="304" y="642" font-size="18" font-weight="800" fill="#172B4D">8단계 — JQL &amp; 저장된 필터</text>
   <text x="304" y="670" font-size="14.5" fill="#42526E">기본/JQL 토글(빨강)로 검색. 예: project = PD AND statusCategory != Done</text>
   <text x="304" y="696" font-size="14.5" fill="#42526E">'필터 저장'(초록)으로 저장 → 공유. ※팀관리형 에픽은 parent 사용(Epic Link 아님)</text>
 </svg>
