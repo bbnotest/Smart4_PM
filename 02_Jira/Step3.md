@@ -42,7 +42,7 @@
 
 완성된 백로그는 이런 모습입니다 👇
 
-![Jira 백로그 목업](../assets/jira_backlog_mockup.svg)
+![Jira 백로그 화면 — 실제 캡처](../assets/jira_step3_backlog.svg)
 
 > 🙋 **에픽 연결을 빼먹으면** Timeline·필터가 비어 보입니다. **모든 스토리에 에픽** 꼭!
 > 🙋 **포인트 칸이 없으면** Project settings → Features → **Estimation** 켜기.
