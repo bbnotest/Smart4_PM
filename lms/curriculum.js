@@ -30,10 +30,10 @@ window.CURRICULUM = {
         { path: "02_Jira/Step4.md",    title: "4단계 · 스프린트",       type: "step", group: "🔵 실무 단계" },
         { path: "02_Jira/Step5.md",    title: "5단계 · Timeline",      type: "step", group: "🔵 실무 단계" },
         { path: "02_Jira/Step6.md",      title: "6단계 · 리포트",          type: "step", group: "🔵 실무 단계" },
-        { path: "02_Jira/QA_Process.md", title: "QA · 이슈(버그) 관리",     type: "step", group: "🔵 실무 단계" },
-        { path: "02_Jira/Step7.md",    title: "7단계 · JQL & 필터",    type: "step", group: "🟣 응용 단계" },
-        { path: "02_Jira/Step8.md",    title: "8단계 · 자동화",         type: "step", group: "🟣 응용 단계" },
-        { path: "02_Jira/Step9.md",    title: "9단계 · 대시보드",       type: "step", group: "🟣 응용 단계" },
+        { path: "02_Jira/Step7.md",  title: "7단계 · QA·이슈 관리",     type: "step", group: "🔵 실무 단계" },
+        { path: "02_Jira/Step8.md",  title: "8단계 · JQL & 필터",       type: "step", group: "🟣 응용 단계" },
+        { path: "02_Jira/Step9.md",  title: "9단계 · 자동화",          type: "step", group: "🟣 응용 단계" },
+        { path: "02_Jira/Step10.md", title: "10단계 · 대시보드",        type: "step", group: "🟣 응용 단계" },
         { path: "02_Jira/Practice.md", title: "Jira 직접 해보기",     type: "practice", deliverable: "백로그 + 스프린트 + Timeline" }
       ]
     },

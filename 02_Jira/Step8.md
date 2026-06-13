@@ -1,69 +1,68 @@
-# 🟦 Jira · 8단계 — 자동화(Automation)
+# 🟦 Jira · 8단계 — JQL & 저장된 필터
 
-> 🎯 **개요** — 반복되는 잡무를 **규칙**으로 자동 처리해, 사람이 깜빡해도 굴러가게 만듭니다.
+> 🎯 **개요** — 원하는 이슈만 빠르게 찾는 **검색(JQL)** 과, 자주 보는 화면을 **저장하는 필터**를 익힙니다.
 
 <div class="scenario">
-<span class="who">🎬 상황 · 출시 한 달 전</span>
+<span class="who">🎬 상황 · 스프린트 2회차</span>
 <ul>
-<li>똑같은 잡무가 반복됩니다. "리뷰 끝났는데 Done으로 안 옮김", "버그인데 담당 배정을 깜빡".</li>
-<li>사람은 잊지만, <b>규칙은 잊지 않습니다.</b></li>
-<li>자동화 규칙으로 이런 일을 자동 처리합니다.</li>
+<li>이슈가 수백 개로 늘었습니다.</li>
+<li>개발자는 "내 작업만", QA는 "이번 스프린트 버그만" 보고 싶어합니다.</li>
+<li>매번 눈으로 찾는 대신, <b>검색으로 거르고 저장</b>해 한 번에 봅니다.</li>
 </ul>
 </div>
 
-📍 [← 7단계](Step7.md) · [9단계 →](Step9.md)
+📍 [← 7단계 · QA](Step7.md) · [9단계 →](Step9.md)
 
 ---
 
-## A. 규칙 만들기
+## A. 쉬운 검색 (Basic)
 
-1. **스페이스 설정(Project settings) → 자동화(Automation) → 흐름 만들기(Create rule) → 처음부터 만들기**
-   - 🙋 새 Jira는 'rule'을 **'흐름(flow)'** 으로 부릅니다. 빌더에서 **Add a trigger / condition / action** 으로 구성.
-2. **언제(Trigger) → 조건(If) → 무엇을(Then)** 순서로 구성 (Trello의 Butler와 같은 개념)
+1. 상단 돋보기(검색) 또는 왼쪽 메뉴 **`필터`(Filters) → `업무 항목 검색`** 열기 *(예전 UI: Filters → View all issues)*
+2. **Basic** 모드에서 프로젝트·담당자·상태·라벨 드롭다운으로 거릅니다 (코드 몰라도 됨)
 
-```mermaid
-graph LR
-    T["When · 트리거<br/>이슈가 Done으로 이동"] --> A["Then · 액션<br/>하위 작업도 모두 닫기"]
+## B. JQL (Advanced) — 외우지 말고 예시로
+
+`Basic` 옆 **JQL** 로 전환하면 한 줄로 정밀 검색이 됩니다.
+
+```
+project = PD AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
+project = PD AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
+project = PD AND parent = PD-11                          # 특정 에픽(E2)의 작업 — 팀관리형은 parent(에픽 키), "Epic Link"는 회사관리형만
+project = PD AND issuetype = Bug AND statusCategory != Done AND priority = Highest   # 출시 블로커 버그 (QA)
 ```
 
-## B. 바로 쓰는 규칙 예시
+## C. 필터 저장 & 공유
 
-| 언제(Trigger) | 무엇을(Action) |
-|---|---|
-| 이슈가 `Done`으로 이동 | 하위 작업(서브태스크)도 자동 완료 |
-| **Bug** 타입 이슈 생성 | 담당자를 QA로 자동 지정 |
-| 스프린트 종료 | 미완료 이슈를 다음 스프린트로 이동 |
-| 7일간 변화 없음 | 담당자에게 알림 코멘트 |
-| **버그**가 다시 열림(Reopen) | 작업 담당자에게 재배정 + 알림 |
+1. 검색 결과 위 **`필터 저장`(Save as)** → 이름(예: `내 미완료`) 저장
+2. 팀과 **공유(Share)** → 모두가 같은 화면을 봄
+3. 저장한 필터는 **보드·대시보드**에서 재사용
 
-![Jira 8단계 — 자동화 흐름(실제 화면)](jira_step8.svg)
+> 🐞 **QA 활용** — 위 **블로커 버그** 검색을 필터로 저장하면, [7단계 · QA](Step7.md)에서 등록한 버그를 매일 한 번에 봅니다.
 
-> 출처: https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/
+![Jira 8단계 — JQL & 필터(실제 화면)](jira_step8.svg)
 
-> 💡 무료 플랜도 기본 자동화가 가능합니다(실행 횟수 제한). "반복되면 규칙으로"가 핵심.
-
-> 🐞 **QA 활용** — 버그 흐름(생성→QA 배정, 재발→재배정·알림)을 자동화하면 QA↔개발 핑퐁이 매끄러워집니다 → [QA · 이슈 관리](QA_Process.md)
+> 출처: https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/
 
 ---
 
 ## 🎮 현장 감각 — 게임 PM은 이렇게
 
-> **Pixel Dungeon 맥락** — 라이브 운영의 반복 잡무(**버그 라벨링·QA 배정·스프린트 롤오버**)를 규칙으로 돌리면, PM은 **콘텐츠·일정**에 집중할 수 있습니다. Trello의 **Butler**와 같은 개념이에요.
+> **Pixel Dungeon 맥락** — 라이브 게임은 이슈가 **수백~수천 개**입니다. "이번 패치 **블로커만**", "내 담당 **버그만**"을 JQL로 즉시 걸러 **일일 스탠드업·핫픽스** 대응 속도를 올립니다. 저장 필터는 곧 **대시보드 가젯의 재료**가 됩니다.
 
 **⚠️ 흔한 실수**
-- 조건(If) 없이 광범위하게 적용 → "왜 자동으로 바뀌었지?" 혼란.
-- 규칙을 과하게 만들어 **무료 플랜 실행 횟수**를 초과.
+- 팀관리형에서 회사관리형 필드(`"Epic Link"`)를 써서 오류 → **`parent`** 사용.
+- 필터를 **저장만 하고 공유 안 함** → 팀이 제각각 다른 화면을 봄.
 
 **🎤 면접 한 줄**
-> *"반복되는 **상태 전이·담당 배정**을 자동화 규칙으로 처리해 휴먼 에러와 잡무를 줄였습니다."*
+> *"**JQL**로 '내 미완료', '이번 스프린트 버그' 같은 뷰를 **저장·공유**해 팀이 같은 기준으로 작업을 봤습니다."*
 
 ---
 
 ## ✅ 확인
 
-- [ ] 트리거 → 액션 구조를 이해한다
-- [ ] 규칙을 1개 만들어 동작을 확인했다
+- [ ] Basic으로 "내 작업"을 걸러낼 수 있다
+- [ ] 검색을 **필터로 저장**해 다시 열 수 있다
 
 ---
 
-👉 다음: **[9단계 · 대시보드 & 마무리](Step9.md)**
+👉 다음: **[9단계 · 자동화(Automation)](Step9.md)**
