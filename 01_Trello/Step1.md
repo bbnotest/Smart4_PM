@@ -23,7 +23,7 @@
 > 🙋 **영어가 부담되면** 크롬 우클릭 → "한국어로 번역". 버튼 위치는 같습니다.
 > 💳 무료는 워크스페이스당 **보드 10개·협업자 10명**. 연습엔 충분합니다.
 
-> 🖼️ 공식 스크린샷 자리 — Trello 가입
+> 🙋 가입은 **구글 로그인**이면 1분, 워크스페이스 이름만 정하면 끝이에요.
 
 ---
 
@@ -34,7 +34,7 @@
 1. **`Create`**(만들기) → **`Create board`**
 2. 제목 `Pixel Dungeon - Sprint 1` 입력 → **`Create`**
 
-![Trello 구조](../assets/trello_structure.svg)
+![Trello 보드 — Pixel Dungeon - Sprint 1](../assets/trello_step1.svg)
 
 > 위 그림처럼, 앞으로 이 **보드** 안에 리스트와 카드를 채워갑니다.
 
