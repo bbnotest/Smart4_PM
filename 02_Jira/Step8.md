@@ -34,12 +34,15 @@ graph LR
 | **Bug** 타입 이슈 생성 | 담당자를 QA로 자동 지정 |
 | 스프린트 종료 | 미완료 이슈를 다음 스프린트로 이동 |
 | 7일간 변화 없음 | 담당자에게 알림 코멘트 |
+| **버그**가 다시 열림(Reopen) | 작업 담당자에게 재배정 + 알림 |
 
 ![Jira 8단계 — 자동화 흐름(실제 화면)](jira_step8.svg)
 
 > 출처: https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/
 
 > 💡 무료 플랜도 기본 자동화가 가능합니다(실행 횟수 제한). "반복되면 규칙으로"가 핵심.
+
+> 🐞 **QA 활용** — 버그 흐름(생성→QA 배정, 재발→재배정·알림)을 자동화하면 QA↔개발 핑퐁이 매끄러워집니다 → [QA · 이슈 관리](QA_Process.md)
 
 ---
 

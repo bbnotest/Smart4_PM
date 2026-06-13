@@ -24,6 +24,8 @@
    - **Filter Results**(한글: `결과 필터`) — 7단계에서 저장한 필터(`내 미완료` 등)
 3. 대시보드를 **공유(Share)** → 팀·경영진이 같은 화면을 봅니다
 
+> 🐞 **QA 활용** — 같은 대시보드에 **심각도별 버그 파이 차트** + **미해결 버그(결과 필터)** 가젯을 올리면 그대로 **QA 현황판**이 됩니다 → [QA · 이슈 관리](QA_Process.md)
+
 ![Jira 9단계 — 대시보드(실제 화면)](jira_step9.svg)
 
 > 출처: https://support.atlassian.com/jira-software-cloud/docs/configure-a-dashboard/

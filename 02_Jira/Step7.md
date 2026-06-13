@@ -11,7 +11,7 @@
 </ul>
 </div>
 
-📍 [← 6단계](Step6.md) · [8단계 →](Step8.md)
+📍 [← QA · 이슈 관리](QA_Process.md) · [8단계 →](Step8.md)
 
 ---
 
@@ -28,6 +28,7 @@
 project = PD AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
 project = PD AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
 project = PD AND parent = PD-11                          # 특정 에픽(E2)의 작업 — 팀관리형은 parent(에픽 키), "Epic Link"는 회사관리형만
+project = PD AND issuetype = Bug AND statusCategory != Done AND priority = Highest   # 출시 블로커 버그 (QA)
 ```
 
 ## C. 필터 저장 & 공유
@@ -35,6 +36,8 @@ project = PD AND parent = PD-11                          # 특정 에픽(E2)의 
 1. 검색 결과 위 **`필터 저장`(Save as)** → 이름(예: `내 미완료`) 저장
 2. 팀과 **공유(Share)** → 모두가 같은 화면을 봄
 3. 저장한 필터는 **보드·대시보드**에서 재사용
+
+> 🐞 **QA 활용** — 위 **블로커 버그** 검색을 필터로 저장하면, [QA · 이슈 관리](QA_Process.md)에서 등록한 버그를 매일 한 번에 봅니다.
 
 ![Jira 7단계 — JQL & 필터(실제 화면)](jira_step7.svg)
 
