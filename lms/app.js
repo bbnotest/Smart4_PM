@@ -269,6 +269,38 @@
   function openSidebar() { $("#sidebar").classList.add("open"); $("#backdrop").hidden = false; }
   function closeSidebar() { $("#sidebar").classList.remove("open"); $("#backdrop").hidden = true; }
 
+  /* ---------------- 이미지 확대(라이트박스) ----------------
+     .doc 안의 이미지를 클릭하면 전체화면 확대, 다시 누르면(오버레이·이미지·✕·Esc) 닫힘.
+     #content 에 위임 등록 → 문서가 다시 렌더돼도 계속 동작. 대시보드 카드(.doc 밖)는 제외. */
+  function setupLightbox() {
+    const lb = document.createElement("div");
+    lb.className = "lightbox";
+    lb.hidden = true;
+    lb.innerHTML = '<span class="lb-close" aria-hidden="true">✕</span><img alt="" /><div class="lb-hint">클릭하면 닫힙니다 · Esc</div>';
+    document.body.appendChild(lb);
+    const lbImg = $("img", lb);
+
+    function open(src, alt) {
+      if (!src) return;
+      lbImg.src = src; lbImg.alt = alt || "";
+      lb.hidden = false; document.body.classList.add("lb-open");
+      requestAnimationFrame(() => lb.classList.add("open"));
+    }
+    function close() {
+      lb.classList.remove("open"); lb.hidden = true;
+      lbImg.removeAttribute("src"); document.body.classList.remove("lb-open");
+    }
+
+    contentEl.addEventListener("click", e => {
+      const img = e.target.closest(".doc img");
+      if (!img) return;
+      e.preventDefault();
+      open(img.currentSrc || img.getAttribute("src"), img.alt);
+    });
+    lb.addEventListener("click", close);                 // 다시 누르면 확대 꺼짐
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && !lb.hidden) close(); });
+  }
+
   /* ---------------- 초기화 ---------------- */
   function init() {
     document.title = C.title + " · LMS";
@@ -279,6 +311,7 @@
     }
 
     buildTrackMenu();
+    setupLightbox();
 
     const trackMenu = $("#trackMenu");
     $("#trackBtn").addEventListener("click", () => { trackMenu.hidden = !trackMenu.hidden; });

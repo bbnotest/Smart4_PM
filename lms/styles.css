@@ -112,7 +112,7 @@ body[data-view="home"] .main{ padding:0 }
 
 /* ---------- 콘텐츠 ---------- */
 .main{flex:1 1 auto; min-width:0; display:flex; flex-direction:column; align-items:center; padding:26px 22px 80px}
-.content{width:100%; max-width:920px}
+.content{width:100%; max-width:1200px}
 .doc{
   background:var(--paper); color:var(--paper-ink); border:1px solid var(--line);
   border-radius:14px; padding:32px 38px 40px; box-shadow:var(--shadow);
@@ -123,7 +123,7 @@ body[data-view="home"] .main{ padding:0 }
 .doc p,.doc li{font-size:14.5px}
 .doc a{color:var(--brand); text-decoration:none}
 .doc a:hover{text-decoration:underline}
-.doc img{max-width:100%; height:auto; display:block; margin:14px auto; border:1px solid var(--line); border-radius:8px; background:#fff}
+.doc img{max-width:100%; height:auto; display:block; margin:14px auto; border:1px solid var(--line); border-radius:8px; background:#fff; cursor:zoom-in}
 .doc hr{border:none; border-top:1px solid var(--line); margin:1.8em 0}
 .doc blockquote{
   margin:1em 0; padding:10px 16px; border-left:4px solid var(--brand);
@@ -148,6 +148,28 @@ body[data-view="home"] .main{ padding:0 }
 .doc .mermaid{margin:18px 0; text-align:center; background:var(--paper); overflow:auto}
 .doc .mermaid svg{max-width:100%; height:auto}
 
+/* ---------- 이미지 확대(라이트박스) ---------- */
+body.lb-open{overflow:hidden}
+.lightbox{
+  position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center;
+  padding:28px; background:rgba(15,20,30,.86); cursor:zoom-out;
+  opacity:0; transition:opacity .15s ease;
+}
+.lightbox.open{opacity:1}
+.lightbox[hidden]{display:none}
+.lightbox img{
+  max-width:96vw; max-height:92vh; width:auto; height:auto;
+  border-radius:8px; box-shadow:0 12px 48px rgba(0,0,0,.55); background:#fff;
+}
+.lb-close{
+  position:fixed; top:14px; right:22px; color:#fff; font-size:26px; line-height:1;
+  opacity:.85; cursor:zoom-out; user-select:none;
+}
+.lb-hint{
+  position:fixed; bottom:18px; left:0; right:0; text-align:center;
+  color:rgba(255,255,255,.78); font-size:12.5px; user-select:none; pointer-events:none;
+}
+
 /* 상황 시나리오 박스 */
 .doc .scenario{
   background:var(--chrome-2); border:1px solid var(--line); border-left:4px solid #8c97a5;
@@ -161,7 +183,7 @@ body[data-view="home"] .main{ padding:0 }
 
 /* ---------- 문서 푸터(이전·다음) ---------- */
 .doc-footer{
-  width:100%; max-width:920px; margin:18px auto 0; display:flex; gap:10px; justify-content:space-between;
+  width:100%; max-width:1200px; margin:18px auto 0; display:flex; gap:10px; justify-content:space-between;
 }
 .doc-footer .navbtn{
   padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--chrome);
