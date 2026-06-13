@@ -29,15 +29,13 @@
 
 완성하면 이런 모습입니다 👇
 
-![Asana List 뷰 목업](../assets/asana_list_mockup.svg)
+![Asana 태스크 등록 — 섹션별 작업](../assets/asana_step3.svg)
 
 ## B. 담당·마감 넣기 (무료)
 
 각 태스크를 클릭하면 오른쪽 **상세 패널**이 열립니다.
 - **`Assignee`**(담당): DEV / ART 등 (혼자면 본인)
 - **`Due date`**(마감일): 시나리오 일정대로
-
-> 🖼️ 공식 스크린샷 자리 — 태스크 만들기
 
 ---
 
