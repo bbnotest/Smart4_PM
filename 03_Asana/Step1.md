@@ -1,36 +1,64 @@
 # 🟧 Asana · 1단계 — 계정과 프로젝트 만들기
 
-> 🎯 이번 단계 목표: **가입하고, 빈 프로젝트를 만든다.**
-> 📍 [← 개요](Guide.md) · 다음 [2단계 →](Step2.md)
+> 🎯 **개요** — Asana에서 팀이 함께 쓸 **프로젝트**를 만듭니다. 가입은 1분, 무료(Personal)로 충분해요.
+
+<div class="scenario">
+<span class="who">🎬 상황 · 입사 첫날</span>
+<ul>
+<li>오늘은 게임 회사 PM 입사 첫날입니다.</li>
+<li>이 팀은 <b>기획·아트·마케팅 등 비개발 직군</b>이 많아 직관적인 Asana를 씁니다.</li>
+<li>대표가 말합니다. "PM님, <b>Asana에 프로젝트부터</b> 하나 만들어 주세요."</li>
+</ul>
+</div>
+
+📍 [← 개요](Guide.md) · [2단계 →](Step2.md)
 
 ---
 
-## A. 계정 만들기
+## A. 계정 만들기 (무료 Personal)
 
-1. **https://asana.com** → **`Get started`**
-2. 이메일/구글로 가입 → 메일 인증
-3. 워크스페이스 이름 `GameDev Academy` 입력, 무료 **Personal** 로 진행
-4. 가입 중 팀원 초대 단계는 **Skip** 해도 됩니다
+1. **https://asana.com** → **`Get started`**(시작하기)
+2. **이메일** 또는 **구글**로 가입 → 받은 메일에서 **인증**
+3. 워크스페이스 이름 `GameDev Academy` 입력 → 무료 **`Personal`** 플랜으로 진행
+4. 가입 중 **팀원 초대·첫 프로젝트 자동생성**은 **`Skip`**(건너뛰기) 해도 됩니다
+
+> 🙋 **영어가 부담되면** 크롬에서 우클릭 → "한국어로 번역". 버튼 위치는 같습니다.
+> 💳 무료 **Personal**은 소규모 협업까지 무료입니다. 혼자 연습엔 차고 넘쳐요.
 
 > 🖼️ 공식 스크린샷 자리 — Asana 가입
-> 출처: https://academy.asana.com/structure-work-with-projects-and-tasks
+> 출처: https://asana.com/
 
 ---
 
 ## B. 프로젝트 만들기
 
-1. 왼쪽 **`+` → `Project` → `Blank project`**(빈 프로젝트)
-2. 이름 `Pixel Dungeon`, 기본 레이아웃 **List** → **Create project**
+1. 왼쪽 **`+`(만들기) → `Project`(프로젝트) → `Blank project`(빈 프로젝트)**
+2. 이름 `Pixel Dungeon`, 기본 레이아웃 **`List`** 선택 → **`Create project`**
 
-> ✅ 상단에 **List · Board · Timeline · Calendar** 탭이 보이면 성공.
+> ✅ 상단에 **List · Board · Calendar** 탭이 보이면 성공입니다.
+> 🙋 **`Timeline`(간트) 탭이 회색·자물쇠**로 보일 수 있어요 — **유료 기능**입니다. 무료에선 **Calendar**로 일정을 봅니다(6단계). 무료/유료 경계는 8단계에서 정리합니다.
+
+---
+
+## 🎮 현장 감각 — 게임 PM은 이렇게
+
+> **Pixel Dungeon 맥락** — Asana는 **비개발 직군과의 협업**에 강합니다. 기획·아트·마케팅이 Jira의 복잡한 용어 없이도 바로 적응하죠. 그래서 "개발 외 인원이 많은 팀"의 첫 협업툴로 자주 선택됩니다.
+
+**⚠️ 흔한 실수**
+- 회사 이메일이 없다고 가입을 미룸 → **개인 구글/이메일**로 무료 가입 OK.
+- 처음부터 **유료 기능**(Timeline·커스텀필드)을 찾다 막힘 → 무료로 되는 것부터.
+
+**🎤 면접 한 줄**
+> *"팀 구성(비개발 직군 비중)을 고려해 **직관적인 Asana**로 협업 환경을 세팅했습니다."*
 
 ---
 
 ## ✅ 확인
 
-- [ ] 빈 프로젝트가 만들어졌다
-- [ ] 상단에 뷰 탭(List/Board/Calendar)이 보인다
+- [ ] 무료 **Personal** 계정으로 로그인된다
+- [ ] `Pixel Dungeon` 프로젝트가 만들어졌다
+- [ ] 상단에 **List · Board · Calendar** 뷰 탭이 보인다
 
 ---
 
-👉 다음: **[2단계 · 섹션과 태스크](Step2.md)**
+👉 다음: **[2단계 · 섹션으로 분류](Step2.md)**

@@ -41,13 +41,16 @@ window.CURRICULUM = {
       title: "Asana",
       badge: "Views",
       items: [
-        { path: "03_Asana/Guide.md",    title: "Asana 개요",            type: "guide" },
-        { path: "03_Asana/Step1.md",    title: "1단계 · 계정과 프로젝트", type: "step" },
-        { path: "03_Asana/Step2.md",    title: "2단계 · 섹션과 태스크",  type: "step" },
-        { path: "03_Asana/Step3.md",    title: "3단계 · 태스크 꾸미기",  type: "step" },
-        { path: "03_Asana/Step4.md",    title: "4단계 · 뷰 전환",        type: "step" },
-        { path: "03_Asana/Step5.md",    title: "5단계 · 마일스톤 & 마무리", type: "step" },
-        { path: "03_Asana/Practice.md", title: "Asana 직접 해보기",    type: "practice", deliverable: "다중 뷰 프로젝트" }
+        { path: "03_Asana/Guide.md",    title: "Asana 개요",                type: "guide" },
+        { path: "03_Asana/Step1.md",    title: "1단계 · 계정과 프로젝트",     type: "step", group: "🟢 기초 단계" },
+        { path: "03_Asana/Step2.md",    title: "2단계 · 섹션으로 분류",       type: "step", group: "🟢 기초 단계" },
+        { path: "03_Asana/Step3.md",    title: "3단계 · 태스크 등록",         type: "step", group: "🟢 기초 단계" },
+        { path: "03_Asana/Step4.md",    title: "4단계 · 태스크 깊이",         type: "step", group: "🔵 실무 단계" },
+        { path: "03_Asana/Step5.md",    title: "5단계 · 태그 & 협업",         type: "step", group: "🔵 실무 단계" },
+        { path: "03_Asana/Step6.md",    title: "6단계 · 뷰 전환",            type: "step", group: "🔵 실무 단계" },
+        { path: "03_Asana/Step7.md",    title: "7단계 · 정리 & 검색",         type: "step", group: "🟣 응용 단계" },
+        { path: "03_Asana/Step8.md",    title: "8단계 · 무료의 한계 & 마무리",  type: "step", group: "🟣 응용 단계" },
+        { path: "03_Asana/Practice.md", title: "Asana 직접 해보기",        type: "practice", deliverable: "다중 뷰 프로젝트" }
       ]
     },
     {
