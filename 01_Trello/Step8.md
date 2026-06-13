@@ -23,6 +23,10 @@
 
 ## B. 무료의 한계 — 이건 Premium
 
+![Trello Premium 뷰 — 무료엔 잠김](../assets/trello_step8.svg)
+
+> ▲ 보드 좌측 위 **뷰 전환** 메뉴 — `Board`(칸반)만 무료, **Table·Calendar·Dashboard·Timeline·Map은 Premium**입니다. (지금은 14일 체험이라 보여요.)
+
 | 기능 | 무료? | 대안 |
 |---|:--:|---|
 | **보드(칸반) 뷰** | ✅ | Trello의 본체 |

@@ -18,7 +18,7 @@
 
 **언제(Trigger) → 무엇을(Action)** 순서로 규칙을 만듭니다.
 
-![Trello Butler 규칙](../assets/trello_butler.svg)
+![Trello Butler 규칙 — 트리거→액션](../assets/trello_step7.svg)
 
 1. 보드 오른쪽 위 **`Automation`**(Butler) → **`Rules`** → **`Create Rule`**
 2. **Trigger**: `when a card is moved to list "Done"`
@@ -28,7 +28,7 @@
 > 🙋 순서만 기억: **"언제 → 무엇을"**. Trigger 먼저, Action 나중.
 > 💳 무료는 **워크스페이스 월 250회**까지 자동 실행. 개인·소규모엔 충분합니다.
 
-> 🖼️ 공식 스크린샷 자리 — Butler 규칙 생성
+> 🙋 위처럼 **트리거(언제) → 액션(무엇을)** 한 줄이면 규칙 완성. 카드를 `Done`으로 옮기면 자동으로 마감이 완료 처리됩니다.
 
 ---
 
