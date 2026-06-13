@@ -32,24 +32,31 @@
 
 ## B. 스크럼 프로젝트 만들기
 
-1. 왼쪽 위 **`Projects` → `Create project`**
-2. 템플릿 **`Scrum`** 선택 → **`Use template`**
-3. 프로젝트 유형은 **`Team-managed`(팀 관리형)** 선택 ← 초보는 무조건 이것!
-4. 이름 `Pixel Dungeon`, Key `PD` → **Create**
+> 💡 **화면 언어/버전 안내** — 사이트가 영어면 괄호 속 영어 버튼을, 한국어면 한글 버튼을 누르세요. 또 **최신 Jira는 `Projects`가 `스페이스(Spaces)`로 표시**됩니다(같은 기능).
+
+1. 왼쪽 메뉴 **`스페이스`(Spaces) 옆 `+`** 클릭 → **스페이스 템플릿** 창이 열립니다
+   - 예전 화면이면 **`Projects` → `Create project`**
+2. 템플릿 **`스크럼`(Scrum)** 선택 → **`템플릿 사용`(Use template)**
+3. 관리 방법 **`팀이 관리`(Team-managed)** 선택 ← 초보는 무조건 이것!
+4. **이름** `Pixel Dungeon` 입력 → **키(Key)** 가 `PD` 로 자동 생성됩니다 (`액세스`는 기본값 그대로) → **`다음`**
+5. 이어지는 **4단계 마법사**: 설정·보기는 기본값으로 **`다음`**, **멤버 초대·도구 연결은 `나중에`로 건너뛰고** 마지막에 **`완료`**
+
+> ⚠️ **두 가지 함정**
+> - **`회사가 관리`(Company-managed)를 고르면 메뉴가 완전히 달라집니다.** 꼭 **`팀이 관리`** 로.
+> - 신규 가입 사이트는 위처럼 **4단계 마법사**입니다(예전엔 이름+Key 한 번으로 끝). 기본값으로 **다음→완료** 하면 됩니다.
 
 > 🖼️ 공식 스크린샷 자리 — 스크럼 프로젝트 생성
 > 출처: https://www.atlassian.com/software/jira/templates/scrum
-
-> ⚠️ **회사관리형(Company-managed)을 고르면 메뉴가 완전히 달라집니다.** 꼭 **팀관리형**으로.
 
 ---
 
 ## ✅ 확인
 
 - [ ] `내사이트.atlassian.net` 으로 로그인된다
-- [ ] 왼쪽 메뉴에 **Backlog · Board · Timeline** 이 보인다
+- [ ] **상단 탭**(요약·목록·보드·백로그·타임라인…)에 **백로그(Backlog)·보드(Board)·타임라인(Timeline)** 이 보인다
 
-> 🙋 **안 보이면**: 왼쪽 아래 **Project settings → Features** 에서 Backlog·Sprints·Timeline·Estimation 을 **켜세요(ON)**. (여기서 많이 막힙니다)
+> 🙋 **안 보이면**: **Project settings(프로젝트 설정) → Features(기능)** 에서 Backlog·Sprints·Timeline·Estimation 을 **켜세요(ON)**. (여기서 많이 막힙니다)
+> 🙋 새 UI에선 이 메뉴들이 **왼쪽이 아니라 프로젝트 이름 아래 상단 탭**에 가로로 놓입니다.
 
 ---
 
