@@ -34,7 +34,7 @@ Asana·Trello에선 유료인 간트를, Jira는 **무료로** 제공합니다. 
 
 완성하면 이런 모습입니다 👇
 
-![Jira Timeline 화면 — 실제 캡처](../assets/jira_step5_timeline.svg)
+![Jira 5단계 — Timeline(실제 화면)](jira_step5.svg)
 
 > 📷 위 그림은 데모 사이트에서 직접 캡처한 실제 화면입니다 · 공식 문서: https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira
 

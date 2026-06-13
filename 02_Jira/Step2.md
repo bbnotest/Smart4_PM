@@ -40,7 +40,8 @@ Timeline 화면에서 만들면 가장 쉽습니다.
 
 `E1 기획` · `E2 코어 플레이` · `E3 던전·콘텐츠` · `E4 메타 진행` · `E5 UI/UX` · `E6 오디오` · `E7 QA·출시`
 
-> 🖼️ 공식 스크린샷 자리 — 에픽 생성
+![Jira 2단계 — 에픽 만들기(실제 화면)](jira_step2.svg)
+
 > 출처: https://www.atlassian.com/agile/project-management/epics-stories-themes
 
 ---

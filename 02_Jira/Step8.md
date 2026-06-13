@@ -35,7 +35,8 @@ graph LR
 | 스프린트 종료 | 미완료 이슈를 다음 스프린트로 이동 |
 | 7일간 변화 없음 | 담당자에게 알림 코멘트 |
 
-> 🖼️ 공식 스크린샷 자리 — Automation 규칙 생성
+![Jira 8단계 — 자동화 흐름(실제 화면)](jira_step8.svg)
+
 > 출처: https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/
 
 > 💡 무료 플랜도 기본 자동화가 가능합니다(실행 횟수 제한). "반복되면 규칙으로"가 핵심.

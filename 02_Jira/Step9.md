@@ -24,7 +24,8 @@
    - **Filter Results**(한글: `결과 필터`) — 7단계에서 저장한 필터(`내 미완료` 등)
 3. 대시보드를 **공유(Share)** → 팀·경영진이 같은 화면을 봅니다
 
-> 🖼️ 공식 스크린샷 자리 — 대시보드 & 가젯
+![Jira 9단계 — 대시보드(실제 화면)](jira_step9.svg)
+
 > 출처: https://support.atlassian.com/jira-software-cloud/docs/configure-a-dashboard/
 
 ## B. 효율적 관리 한 장 요약

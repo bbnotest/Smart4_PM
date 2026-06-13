@@ -36,7 +36,8 @@ project = PD AND parent = PD-11                          # 특정 에픽(E2)의 
 2. 팀과 **공유(Share)** → 모두가 같은 화면을 봄
 3. 저장한 필터는 **보드·대시보드**에서 재사용
 
-> 🖼️ 공식 스크린샷 자리 — JQL 검색 / 필터 저장
+![Jira 7단계 — JQL & 필터(실제 화면)](jira_step7.svg)
+
 > 출처: https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/
 
 ---

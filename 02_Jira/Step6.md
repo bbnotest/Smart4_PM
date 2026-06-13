@@ -29,7 +29,7 @@ graph LR
 
 > 💡 외울 필요 없어요. "PM은 번다운으로 지연을 일찍 잡는다" 정도면 충분.
 
-![Jira 번다운/보고서 화면](../assets/jira_step6_reports.svg)
+![Jira 6단계 — 보고서(실제 화면)](jira_step6.svg)
 
 > 📷 실제 보고서 화면을 본떠 만든 안내 그림 · 공식 문서: https://www.atlassian.com/agile/tutorials/sprints
 
