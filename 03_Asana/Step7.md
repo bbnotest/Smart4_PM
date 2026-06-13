@@ -38,7 +38,9 @@ List 뷰 상단의 **`Sort`(정렬) · `Group by`(그룹) · `Filter`(필터)** 
 
 ## 🎮 현장 감각 — 게임 PM은 이렇게
 
-> **Pixel Dungeon 맥락** — PM은 매일 **My Tasks**로 "오늘 내가 챙길 것"을, **Group by Assignee**로 "팀원별 부하"를 봅니다. 무료만으로도 일일 운영이 충분히 돌아갑니다.
+> **Pixel Dungeon 맥락**<br>
+> PM은 매일 My Tasks로 "오늘 내가 챙길 것"을, Group by Assignee로 "팀원별 부하"를 봅니다.<br>
+> 무료만으로도 일일 운영이 충분히 돌아갑니다.
 
 **⚠️ 흔한 실수**
 - 마감(Due date)을 안 넣어서 **정렬·My Tasks가 비어** 보임 → 3단계로 돌아가 채우기.
