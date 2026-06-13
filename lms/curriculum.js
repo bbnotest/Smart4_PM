@@ -58,13 +58,16 @@ window.CURRICULUM = {
       title: "Trello",
       badge: "Kanban",
       items: [
-        { path: "01_Trello/Guide.md",    title: "Trello 개요",          type: "guide" },
-        { path: "01_Trello/Step1.md",    title: "1단계 · 계정과 보드",    type: "step" },
-        { path: "01_Trello/Step2.md",    title: "2단계 · 리스트와 카드",  type: "step" },
-        { path: "01_Trello/Step3.md",    title: "3단계 · 카드 꾸미기",    type: "step" },
-        { path: "01_Trello/Step4.md",    title: "4단계 · 칸반 운영",      type: "step" },
-        { path: "01_Trello/Step5.md",    title: "5단계 · 자동화 & 마무리", type: "step" },
-        { path: "01_Trello/Practice.md", title: "Trello 직접 해보기",   type: "practice", deliverable: "Kanban 보드" }
+        { path: "01_Trello/Guide.md",    title: "Trello 개요",             type: "guide" },
+        { path: "01_Trello/Step1.md",    title: "1단계 · 계정과 보드",      type: "step", group: "🟢 기초 단계" },
+        { path: "01_Trello/Step2.md",    title: "2단계 · 리스트(워크플로)",  type: "step", group: "🟢 기초 단계" },
+        { path: "01_Trello/Step3.md",    title: "3단계 · 카드 등록",        type: "step", group: "🟢 기초 단계" },
+        { path: "01_Trello/Step4.md",    title: "4단계 · 카드 꾸미기",      type: "step", group: "🔵 실무 단계" },
+        { path: "01_Trello/Step5.md",    title: "5단계 · 체크리스트·첨부",   type: "step", group: "🔵 실무 단계" },
+        { path: "01_Trello/Step6.md",    title: "6단계 · 칸반 운영",        type: "step", group: "🔵 실무 단계" },
+        { path: "01_Trello/Step7.md",    title: "7단계 · Butler 자동화",    type: "step", group: "🟣 응용 단계" },
+        { path: "01_Trello/Step8.md",    title: "8단계 · Power-Up & 마무리", type: "step", group: "🟣 응용 단계" },
+        { path: "01_Trello/Practice.md", title: "Trello 직접 해보기",     type: "practice", deliverable: "Kanban 보드" }
       ]
     },
     {
