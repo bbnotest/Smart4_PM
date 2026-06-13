@@ -27,7 +27,6 @@ graph TD
 3. US-01~04를 E2 아래, US-05~06을 E3 아래에 둡니다
 
 > 🖼️ 공식 스크린샷 자리 — 이슈 + Parent task
-> 출처: https://www.redmine.org/projects/redmine/wiki/RedmineIssues
 
 > ✅ 상위 이슈를 열면 아래에 **Subtasks 목록**이 보입니다 = WBS 완성.
 

@@ -47,7 +47,7 @@ graph LR
 
 ![Jira 4단계 — 스프린트 보드(실제 화면)](jira_step4.svg)
 
-> 📷 실제 보드 화면을 본떠 만든 안내 그림 · 공식 문서: https://support.atlassian.com/jira-software-cloud/docs/enable-sprints/
+> 📷 실제 보드 화면을 본떠 만든 안내 그림
 
 ---
 

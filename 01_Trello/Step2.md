@@ -29,7 +29,6 @@ graph LR
 > 💡 헷갈리면 `To Do / Doing / Done` 3개로 시작해도 정상입니다.
 
 > 🖼️ 공식 스크린샷 자리 — 리스트 만들기
-> 출처: https://trello.com/guide/trello-101
 
 ---
 

@@ -42,7 +42,6 @@ Timeline 화면에서 만들면 가장 쉽습니다.
 
 ![Jira 2단계 — 에픽 만들기(실제 화면)](jira_step2.svg)
 
-> 출처: https://www.atlassian.com/agile/project-management/epics-stories-themes
 
 ---
 

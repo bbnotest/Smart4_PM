@@ -25,7 +25,6 @@
 > 🙋 나중에 **Gantt 탭이 없으면** 이 모듈 체크를 빠뜨린 것 → Settings → Modules 에서 다시 켜기.
 
 > 🖼️ 공식 스크린샷 자리 — 프로젝트 생성/모듈
-> 출처: https://www.redmine.org/projects/redmine/wiki/RedmineProjectSettings
 
 ---
 

@@ -24,7 +24,6 @@
 > 💳 무료는 워크스페이스당 **보드 10개·협업자 10명**. 연습엔 충분합니다.
 
 > 🖼️ 공식 스크린샷 자리 — Trello 가입
-> 출처: https://support.atlassian.com/trello/docs/creating-a-new-board/
 
 ---
 

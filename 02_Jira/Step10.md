@@ -28,7 +28,6 @@
 
 ![Jira 10단계 — 대시보드(실제 화면)](jira_step10.svg)
 
-> 출처: https://support.atlassian.com/jira-software-cloud/docs/configure-a-dashboard/
 
 ## B. 효율적 관리 한 장 요약
 

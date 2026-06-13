@@ -41,7 +41,6 @@ project = PD AND issuetype = Bug AND statusCategory != Done AND priority = Highe
 
 ![Jira 8단계 — JQL & 필터(실제 화면)](jira_step8.svg)
 
-> 출처: https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/
 
 ---
 

@@ -30,7 +30,6 @@
 > 💡 Redmine 간트는 **드래그 편집이 안 됨**(보기 위주). 일정 변경은 이슈의 날짜를 수정하면 반영됩니다.
 
 > 🖼️ 공식 스크린샷 자리 — Gantt
-> 출처: https://www.redmine.org/projects/redmine/wiki/RedmineGantt
 
 ---
 

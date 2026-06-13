@@ -47,7 +47,7 @@
 > 🙋 **에픽 연결을 빼먹으면** Timeline·필터가 비어 보입니다. **모든 스토리에 에픽** 꼭!
 > 🙋 **포인트 칸이 없으면** Project settings → Features → **Estimation** 켜기.
 
-> 📷 위 그림은 데모 사이트에서 직접 캡처한 실제 화면입니다 · 공식 문서: https://support.atlassian.com/jira-software-cloud/docs/use-your-scrum-backlog/
+> 📷 위 그림은 데모 사이트에서 직접 캡처한 실제 화면입니다
 
 ---
 

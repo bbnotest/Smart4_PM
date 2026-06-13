@@ -26,7 +26,6 @@
 > 🙋 다시 들어올 땐 항상 `https://(내사이트).atlassian.net` 으로. 북마크 추천!
 
 > 🖼️ 공식 스크린샷 자리 — Jira 가입/사이트 생성
-> 출처: https://www.atlassian.com/software/jira/free
 
 ---
 
@@ -47,7 +46,7 @@
 
 ![Jira 1단계 — 프로젝트 생성(실제 화면)](jira_step1.svg)
 
-> 📷 실제 생성 화면을 본떠 만든 안내 그림 · 공식 문서: https://www.atlassian.com/software/jira/templates/scrum
+> 📷 실제 생성 화면을 본떠 만든 안내 그림
 
 ---
 

@@ -36,7 +36,6 @@ docker run -d --name redmine -p 3000:3000 redmine:6.1
 > - Docker 오류 → Docker Desktop 먼저 실행
 
 > 🖼️ 공식 스크린샷 자리 — Redmine 첫 화면
-> 출처: https://hub.docker.com/_/redmine
 
 ---
 

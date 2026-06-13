@@ -38,7 +38,6 @@ graph LR
 
 ![Jira 9단계 — 자동화 흐름(실제 화면)](jira_step9.svg)
 
-> 출처: https://support.atlassian.com/cloud-automation/docs/jira-cloud-automation/
 
 > 💡 무료 플랜도 기본 자동화가 가능합니다(실행 횟수 제한). "반복되면 규칙으로"가 핵심.
 

@@ -27,7 +27,6 @@
 - 카드 하단 **코멘트**에 결정·논의를 남깁니다(`@이름`으로 멘션). "왜 이렇게 했지?"가 기록으로 남아요.
 
 > 🖼️ 공식 스크린샷 자리 — 체크리스트·첨부
-> 출처: https://support.atlassian.com/trello/docs/adding-checklists-to-cards/
 
 ---
 

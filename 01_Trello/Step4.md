@@ -29,7 +29,6 @@
 - **`Dates`** → Due date 지정 → Save. 카드 앞면에 **마감 배지**가 뜹니다.
 
 > 🖼️ 공식 스크린샷 자리 — 라벨·멤버·마감
-> 출처: https://support.atlassian.com/trello/docs/adding-labels-to-cards/
 
 ---
 

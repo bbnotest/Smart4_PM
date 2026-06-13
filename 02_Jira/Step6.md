@@ -31,7 +31,7 @@ graph LR
 
 ![Jira 6단계 — 보고서(실제 화면)](jira_step6.svg)
 
-> 📷 실제 보고서 화면을 본떠 만든 안내 그림 · 공식 문서: https://www.atlassian.com/agile/tutorials/sprints
+> 📷 실제 보고서 화면을 본떠 만든 안내 그림
 
 ---
 

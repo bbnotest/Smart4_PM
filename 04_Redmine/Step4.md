@@ -24,7 +24,6 @@ graph LR
 ```
 
 > 🖼️ 공식 스크린샷 자리 — Roadmap
-> 출처: https://www.redmine.org/projects/redmine/wiki/RedmineRoadmap
 
 ---
 
