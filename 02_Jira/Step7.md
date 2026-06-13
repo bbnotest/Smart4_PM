@@ -17,7 +17,7 @@
 
 ## A. 쉬운 검색 (Basic)
 
-1. 상단 돋보기 → **Filters → View all issues**(또는 Advanced search)
+1. 상단 돋보기(검색) 또는 왼쪽 메뉴 **`필터`(Filters) → `업무 항목 검색`** 열기 *(예전 UI: Filters → View all issues)*
 2. **Basic** 모드에서 프로젝트·담당자·상태·라벨 드롭다운으로 거릅니다 (코드 몰라도 됨)
 
 ## B. JQL (Advanced) — 외우지 말고 예시로
@@ -27,12 +27,12 @@
 ```
 project = PD AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
 project = PD AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
-project = PD AND "Epic Link" = "E2 코어 플레이"                          # 특정 에픽의 작업
+project = PD AND parent = PD-11                          # 특정 에픽(E2)의 작업 — 팀관리형은 parent(에픽 키), "Epic Link"는 회사관리형만
 ```
 
 ## C. 필터 저장 & 공유
 
-1. 검색 결과 위 **Save as** → 이름(예: `내 미완료`) 저장
+1. 검색 결과 위 **`필터 저장`(Save as)** → 이름(예: `내 미완료`) 저장
 2. 팀과 **공유(Share)** → 모두가 같은 화면을 봄
 3. 저장한 필터는 **보드·대시보드**에서 재사용
 

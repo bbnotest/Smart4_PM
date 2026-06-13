@@ -17,7 +17,8 @@
 
 ## A. 규칙 만들기
 
-1. **Project settings → Automation → Create rule**
+1. **스페이스 설정(Project settings) → 자동화(Automation) → 흐름 만들기(Create rule) → 처음부터 만들기**
+   - 🙋 새 Jira는 'rule'을 **'흐름(flow)'** 으로 부릅니다. 빌더에서 **Add a trigger / condition / action** 으로 구성.
 2. **언제(Trigger) → 조건(If) → 무엇을(Then)** 순서로 구성 (Trello의 Butler와 같은 개념)
 
 ```mermaid

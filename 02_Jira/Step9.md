@@ -17,11 +17,11 @@
 
 ## A. 대시보드 만들기
 
-1. 좌측 **Dashboards → Create dashboard** (이름: `Pixel Dungeon 현황`)
-2. **Add gadget** 으로 위젯을 올립니다:
-   - **Sprint Burndown** — 스프린트 진척
-   - **Pie Chart** — 우선순위/담당자 분포
-   - **Filter Results** — 7단계에서 저장한 필터(`내 미완료` 등)
+1. 좌측 **`대시보드`(Dashboards) → `대시보드 만들기`(Create dashboard)** (이름: `Pixel Dungeon 현황`)
+2. **`가젯 추가`(Add gadget)** 로 위젯을 올립니다 (가젯 검색창에 한글명 입력):
+   - **Sprint Burndown**(한글: `스프린트 번다운 차트 가젯`) — 스프린트 진척
+   - **Pie Chart**(한글: `파이 차트`) — 우선순위/담당자 분포
+   - **Filter Results**(한글: `결과 필터`) — 7단계에서 저장한 필터(`내 미완료` 등)
 3. 대시보드를 **공유(Share)** → 팀·경영진이 같은 화면을 봅니다
 
 > 🖼️ 공식 스크린샷 자리 — 대시보드 & 가젯
