@@ -5,7 +5,7 @@
    ============================================================ */
 window.CURRICULUM = {
   title: "게임 PM 협업툴 가이드",
-  subtitle: "PM 기초 + Jira · Asana · Trello · Redmine",
+  subtitle: "PM 기초 + Jira · Asana · Trello · Redmine · Jenkins",
   sections: [
     {
       id: "pm",
@@ -90,6 +90,24 @@ window.CURRICULUM = {
       ]
     },
     {
+      id: "jenkins",
+      title: "Jenkins",
+      badge: "CI/CD",
+      items: [
+        { path: "06_Jenkins/Guide.md",    title: "Jenkins 개요",             type: "guide" },
+        { path: "06_Jenkins/Step1.md",    title: "1단계 · 설치하기",          type: "step", group: "🟢 기초 단계" },
+        { path: "06_Jenkins/Step2.md",    title: "2단계 · 첫 Job & 빌드",     type: "step", group: "🟢 기초 단계" },
+        { path: "06_Jenkins/Step3.md",    title: "3단계 · 빌드 읽기",         type: "step", group: "🟢 기초 단계" },
+        { path: "06_Jenkins/Step4.md",    title: "4단계 · Unity 빌드 준비",   type: "step", group: "🔵 실무 단계" },
+        { path: "06_Jenkins/Step5.md",    title: "5단계 · Unity 자동 빌드",   type: "step", group: "🔵 실무 단계" },
+        { path: "06_Jenkins/Step6.md",    title: "6단계 · 자동 트리거",       type: "step", group: "🔵 실무 단계" },
+        { path: "06_Jenkins/Step7.md",    title: "7단계 · 산출물 보관·전달",   type: "step", group: "🟣 응용 단계" },
+        { path: "06_Jenkins/Step8.md",    title: "8단계 · 깨진 빌드 대응",     type: "step", group: "🟣 응용 단계" },
+        { path: "06_Jenkins/Step9.md",    title: "9단계 · Git 연동 & 마무리",  type: "step", group: "🟣 응용 단계" },
+        { path: "06_Jenkins/Practice.md", title: "Jenkins 직접 해보기",      type: "practice", deliverable: "Unity 자동 빌드 파이프라인" }
+      ]
+    },
+    {
       id: "wrapup",
       title: "마무리",
       badge: "툴 선택",
@@ -117,6 +135,7 @@ window.CURRICULUM = {
     { label: "Asana",   sub: "섹션·태스크와 List·Board·Calendar 다중 뷰 관리", cover: "assets/cover_asana.svg",   go: "03_Asana/Guide.md",       match: "03_Asana/" },
     { label: "Trello",  sub: "카드를 끌어다 놓는 가장 쉬운 칸반 보드",          cover: "assets/cover_trello.svg",  go: "01_Trello/Guide.md",      match: "01_Trello/" },
     { label: "Redmine", sub: "직접 설치하는 오픈소스, 무료 내장 간트 차트",     cover: "assets/cover_redmine.svg", go: "04_Redmine/Guide.md",     match: "04_Redmine/" },
+    { label: "Jenkins", sub: "내 PC에 직접 띄우는 Unity 빌드 자동화(CI)",      cover: "assets/cover_jenkins.svg", go: "06_Jenkins/Guide.md",     match: "06_Jenkins/" },
     { label: "마무리",  sub: "상황별로 어떤 툴이 맞는지 직접 고르는 연습",      cover: "assets/cover_wrap.svg",    go: "05_Capstone/Capstone.md", match: "05_Capstone/" }
   ]
 };

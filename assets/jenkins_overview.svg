@@ -1,0 +1,43 @@
+<svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Malgun Gothic',Arial,sans-serif">
+  <text x="16" y="26" font-size="15" font-weight="700" fill="#2A2A2A">Jenkins — 코드가 올라오면, 사람이 안 눌러도 자동으로 빌드</text>
+
+  <!-- Stage 1: developer commits -->
+  <rect x="16" y="56" width="140" height="118" rx="10" fill="#EEF2F7" stroke="#CBD5E1"/>
+  <circle cx="86" cy="90" r="16" fill="#64748B"/>
+  <rect x="56" y="114" width="60" height="32" rx="5" fill="#1E1E2E"/>
+  <text x="86" y="136" font-size="13" fill="#7DD3FC" text-anchor="middle" font-family="Consolas,monospace">&lt;/&gt;</text>
+  <text x="86" y="166" font-size="11" fill="#334155" text-anchor="middle" font-weight="600">① 코드 올림(push)</text>
+
+  <line x1="160" y1="115" x2="196" y2="115" stroke="#D9691E" stroke-width="3"/>
+  <path d="M196 115 l-12 -7 l0 14 z" fill="#D9691E"/>
+
+  <!-- Stage 2: Jenkins butler -->
+  <rect x="202" y="56" width="140" height="118" rx="10" fill="#FFF3E9" stroke="#E0A878"/>
+  <circle cx="272" cy="88" r="16" fill="#F4F1EE" stroke="#C9A88C"/>
+  <path d="M260 110 q12 -10 24 0 l0 18 l-24 0 z" fill="#D9691E"/>
+  <path d="M266 114 l6 5 l6 -5 l0 11 l-12 0 z" fill="#A33B12"/>
+  <text x="272" y="166" font-size="11" fill="#9A4517" text-anchor="middle" font-weight="700">② Jenkins 자동 빌드</text>
+
+  <line x1="346" y1="115" x2="382" y2="115" stroke="#D9691E" stroke-width="3"/>
+  <path d="M382 115 l-12 -7 l0 14 z" fill="#D9691E"/>
+
+  <!-- Stage 3: build result -->
+  <rect x="388" y="56" width="140" height="118" rx="10" fill="#EAF7EC" stroke="#A7D9AE"/>
+  <circle cx="428" cy="90" r="15" fill="#fff" stroke="#3FB54B" stroke-width="2"/>
+  <circle cx="428" cy="90" r="8" fill="#3FB54B"/>
+  <rect x="452" y="78" width="40" height="48" rx="4" fill="#fff" stroke="#94A3B8"/>
+  <text x="472" y="106" font-size="9" fill="#334155" text-anchor="middle">.exe</text>
+  <text x="458" y="166" font-size="11" fill="#1E7A34" text-anchor="middle" font-weight="600">③ 성공 → 결과물</text>
+
+  <line x1="532" y1="115" x2="568" y2="115" stroke="#D9691E" stroke-width="3"/>
+  <path d="M568 115 l-12 -7 l0 14 z" fill="#D9691E"/>
+
+  <!-- Stage 4: QA -->
+  <rect x="574" y="56" width="72" height="118" rx="10" fill="#EEF2F7" stroke="#CBD5E1"/>
+  <circle cx="610" cy="90" r="15" fill="#64748B"/>
+  <text x="610" y="126" font-size="11" fill="#334155" text-anchor="middle">QA</text>
+  <text x="610" y="166" font-size="10" fill="#334155" text-anchor="middle" font-weight="600">④ 최신 빌드</text>
+
+  <text x="16" y="212" font-size="11.5" fill="#64748B">개발자가 코드를 올리면 → Jenkins가 알아서 빌드 → 성공하면 초록 공과 실행파일(.exe) → QA가 항상 최신 빌드로 테스트</text>
+  <text x="16" y="232" font-size="11" fill="#94A3B8">＊개념 설명용 그림입니다 (실제 Jenkins 화면 캡처가 아닙니다).</text>
+</svg>
