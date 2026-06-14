@@ -31,6 +31,8 @@ project = PD AND parent = PD-11                          # 특정 에픽(E2)의 
 project = PD AND issuetype = Bug AND statusCategory != Done AND priority = Highest   # 출시 블로커 버그 (QA)
 ```
 
+> 🙋 **방금 만든 이슈가 검색에 안 보이면** 당황 말고 잠시 후 새로고침하세요 — 보드엔 바로 보여도 **검색 인덱스는 몇 초~수십 초 늦게** 반영됩니다.
+
 ## C. 필터 저장 & 공유
 
 1. 검색 결과 위 **`필터 저장`(Save as)** → 이름(예: `내 미완료`) 저장
