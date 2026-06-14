@@ -65,4 +65,4 @@
 ## ➡️ 다음
 
 - 손으로 직접: **[Trello 직접 해보기](Practice.md)**
-- 다음 툴: **[Redmine 가이드](../04_Redmine/Guide.md)** — 직접 서버를 띄워 무료 **내장 간트**를 경험합니다.
+- 🎓 **트랙은 순서가 없어요** — 각 툴(Jira·Asana·Trello·Redmine)은 독립적이라 끌리는 걸 바로 시작하면 됩니다. 내게 맞는 툴 고르기 → **[툴 선택 가이드](../05_Capstone/Capstone.md)**
