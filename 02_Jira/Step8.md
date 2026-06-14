@@ -27,7 +27,7 @@
 ```
 project = PD AND assignee = currentUser() AND statusCategory != Done   # 내 미완료
 project = PD AND issuetype = Bug AND sprint in openSprints()           # 이번 스프린트 버그
-project = PD AND parent = PD-11                          # 특정 에픽(E2)의 작업 — 팀관리형은 parent(에픽 키), "Epic Link"는 회사관리형만
+project = PD AND parent = PD-2                           # E2 에픽에 속한 스토리(에픽을 먼저 만들어 E2 키 = PD-2) — 팀관리형은 parent(에픽 키), "Epic Link"는 회사관리형만
 project = PD AND issuetype = Bug AND statusCategory != Done AND priority = Highest   # 출시 블로커 버그 (QA)
 ```
 
